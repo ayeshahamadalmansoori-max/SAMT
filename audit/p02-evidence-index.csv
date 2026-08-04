@@ -1,0 +1,37 @@
+area,claim,status,filePath,symbolOrSection,verificationMethod,limitation
+OSINT Sources,Finnhub Market API integrated for stock quotes and earnings,credential required,server/worldmonitor/market/handler.ts,market handler,Static Code Audit,Free tier 60 req/min rate limit
+OSINT Sources,Yahoo Finance integrated with 150ms request staggering,implemented and active,server/worldmonitor/market/handler.ts,staggered fetch,Static Code Audit,Subject to uncredentialed HTTP 429
+OSINT Sources,FRED economic data integrated for macro series and inflation,credential required,server/worldmonitor/market/handler.ts,FRED series fetch,Static Code Audit,FRED API key required
+OSINT Sources,EIA energy API integrated for petroleum and gas data,credential required,api/eia.js,EIA handler,Static Code Audit,EIA API key required
+OSINT Sources,ACLED conflict event data seeder with OAuth auto-refresh,credential required,scripts/seed-conflict-intel.mjs,runSeed,Static Code Audit,ACLED account credentials required
+OSINT Sources,UCDP conflict events integrated on Railway relay seeder,implemented and active,scripts/seed-ucdp.mjs,seed loop,Static Code Audit,Trailing 2-year window for CII v8
+OSINT Sources,NASA FIRMS satellite thermal anomaly detection,credential required,scripts/seed-fire-detections.mjs,firms fetcher,Static Code Audit,NASA MAP_KEY required
+OSINT Sources,USGS earthquake hazards feed using 4.5_week GeoJSON,implemented and active,scripts/seed-earthquakes.mjs,usgs fetcher,Static Code Audit,Public GeoJSON feed
+OSINT Sources,AviationStack global airport delay and cancellation tracker,credential required,scripts/ais-relay.cjs,aviationstack loop,Static Code Audit,AviationStack API key required
+OSINT Sources,OpenSky Network ADS-B military flight tracking,implemented and active,scripts/seed-military-flights.mjs,opensky fetcher,Static Code Audit,Anonymous tier rate limits
+OSINT Sources,Wingbits H3 hexagon GPS/GNSS jamming interference grid,implemented and active,scripts/seed-gpsjam.mjs,wingbits fetcher,Static Code Audit,Wingbits API availability
+OSINT Sources,AISStream real-time maritime AIS vessel tracking WebSocket,credential required,scripts/ais-relay.cjs,AISStream WebSocket,Static Code Audit,AISStream API key required
+OSINT Sources,IMF PortWatch chokepoint transit vessel counters,implemented and active,scripts/seed-chokepoints.mjs,portwatch fetcher,Static Code Audit,ArcGIS endpoint availability
+OSINT Sources,CorridorRisk maritime corridor threat intelligence,implemented and active,scripts/ais-relay.cjs,corridor-risk fetcher,Static Code Audit,Relay proxying required
+OSINT Sources,Cloudflare Radar BGP and internet outage monitoring,credential required,api/cyber/v1/internet-outages,radar handler,Static Code Audit,Paid Cloudflare Radar token required
+OSINT Sources,Abuse.ch Feodo Tracker botnet C2 IP feed,implemented and active,api/cyber-threats.js,feodo fetcher,Static Code Audit,Public feed updated hourly
+OSINT Sources,Abuse.ch URLhaus malicious payload URL feed,implemented and active,api/cyber-threats.js,urlhaus fetcher,Static Code Audit,High volume threat feed
+OSINT Sources,C2IntelFeeds active botnet command and control IPs,implemented and active,api/cyber-threats.js,c2intelfeeds fetcher,Static Code Audit,Community threat feed
+OSINT Sources,AlienVault OTX threat pulses and IOC indicators,credential required,api/cyber-threats.js,otx fetcher,Static Code Audit,OTX API key required
+OSINT Sources,AbuseIPDB IP reputation and confidence scores,credential required,api/cyber-threats.js,abuseipdb fetcher,Static Code Audit,1000 checks/day free tier
+OSINT Sources,TeleGeography submarine cables and landing stations,implemented and active,scripts/seed-submarine-cables.mjs,cables seeder,Static Code Audit,86 cable routes tracked
+OSINT Sources,Bank for International Settlements (BIS) banking statistics,implemented and active,scripts/seed-bis.mjs,bis seeder,Static Code Audit,Quarterly BIS data updates
+OSINT Sources,World Bank development indicators seeder,implemented and active,scripts/ais-relay.cjs,world bank loop,Static Code Audit,Annual WB data updates
+OSINT Sources,CoinGecko / CoinPaprika crypto & stablecoin tracking,implemented and active,server/worldmonitor/market/handler.ts,crypto handler,Static Code Audit,CoinPaprika fallback on 429
+OSINT Sources,Polymarket prediction market odds and volume,implemented and active,scripts/ais-relay.cjs,polymarket loop,Static Code Audit,Relay concurrency limiter protected
+OSINT Sources,SEC EDGAR CIK resolution, 8-K material events & filings,implemented and active,server/worldmonitor/intelligence/handler.ts,edgar handler,Static Code Audit,SEC User-Agent header required
+OSINT Sources,Travelpayouts aviation flight search trends,credential required,server/worldmonitor/aviation/handler.ts,travelpayouts handler,Static Code Audit,Travelpayouts token required
+OSINT Sources,500+ curated RSS/Atom news feeds across 15 categories,implemented and active,shared/rss-domains.json,rss domains,Static Code Audit,Proxied via edge & relay allowlist
+OSINT Sources,27 curated Telegram OSINT channels via MTProto,credential required,data/telegram-channels.json,telegram relay,Static Code Audit,Telegram App API ID/Hash required
+OSINT Sources,OREF Israel Sirens real-time alerts & Hebrew translation,implemented and active,scripts/ais-relay.cjs,oref poller,Static Code Audit,Tunnel/curl polling on Railway
+OSINT Sources,Consumer Prices Playwright scrapers for basket inflation,implemented and active,consumer-prices-core/Dockerfile,container config,Static Code Audit,Runs in Docker container
+OSINT Sources,USNI Fleet naval carrier strike group positions,implemented and active,api/usni-fleet.js,usni parser,Static Code Audit,HTML regex parser dependency
+OSINT Sources,Groq Cloud LLM summarization and brief generation,credential required,server/_shared/llm.ts,groq client,Static Code Audit,Groq API key required
+OSINT Sources,OpenRouter multi-model LLM summarization fallback,credential required,server/_shared/llm.ts,openrouter client,Static Code Audit,OpenRouter API key required
+OSINT Sources,Ollama local air-gapped LLM inference server,implemented and active,public/settings.html,local LLM settings,Static Code Audit,Requires local Ollama daemon
+OSINT Sources,Google Gemini API server-side World Brief synthesis,credential required,server/worldmonitor/intelligence/handler.ts,gemini client,Static Code Audit,GEMINI_API_KEY required
