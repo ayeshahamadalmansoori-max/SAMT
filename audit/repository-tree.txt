@@ -256,10 +256,16 @@ api/youtube/embed.js
 api/youtube/embed.test.mjs
 api/youtube/live.js
 ARCHITECTURE.md
+audit/repository-tree.txt
 audit/s01-environment-report.json
 audit/s01-environment-report.txt
 audit/s03-baseline-summary.txt
 audit/s03-generated-files.patch
+audit/s04-architecture-summary.json
+audit/s04-dependency-indicators.csv
+audit/s04-key-files.csv
+audit/s04-package-scripts.csv
+audit/s04-summary.txt
 biome.json
 blog-site/.gitignore
 blog-site/.vscode/extensions.json

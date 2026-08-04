@@ -1,12 +1,12 @@
 {
     "workUnit":  "S04",
     "title":  "Repository Architecture Extraction",
-    "timestampLocal":  "2026-08-04T11:36:49.9902771+04:00",
+    "timestampLocal":  "2026-08-04T11:46:24.3167770+04:00",
     "repositoryPath":  "C:\\Projects\\worldmonitor",
     "branch":  "samt/transformation",
-    "commit":  "cea74f6ebe7b4bbb2af19cd43db912d29a95491e",
+    "commit":  "ab68a87f8ff0729f2356d626843d7bad3b53aab9",
     "workingTreeCleanAtStart":  false,
-    "statusShortAtStart":  "?? audit/repository-tree.txt\r\n?? audit/s04-architecture-summary.json\r\n?? audit/s04-dependency-indicators.csv\r\n?? audit/s04-key-files.csv\r\n?? audit/s04-package-scripts.csv\r\n?? audit/s04-summary.txt",
+    "statusShortAtStart":  "?? handoff/",
     "package":  {
                     "name":  "world-monitor",
                     "version":  "2.10.0",
@@ -15,7 +15,7 @@
                     "engines":  null
                 },
     "counts":  {
-                   "trackedFiles":  5221,
+                   "trackedFiles":  5227,
                    "packageScripts":  129,
                    "dependencyEntries":  77,
                    "keyFileMatches":  5116
