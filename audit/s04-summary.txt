@@ -1,0 +1,17 @@
+SAMT S04 - Repository Architecture Extraction
+Timestamp: 2026-08-04T11:36:49.9902771+04:00
+Repository: C:\Projects\worldmonitor
+Branch: samt/transformation
+Commit: cea74f6ebe7b4bbb2af19cd43db912d29a95491e
+Working tree clean at start: False
+
+Package: world-monitor 2.10.0
+Package manager: not declared
+
+Tracked files: 5221
+Package scripts: 129
+Dependency entries: 77
+Key-file matches: 5116
+
+Important limitation:
+Static indicators are not proof that a capability is active or operational.
