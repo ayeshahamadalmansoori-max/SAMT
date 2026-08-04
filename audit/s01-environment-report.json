@@ -1,0 +1,669 @@
+﻿{
+    "workUnit":  "S01",
+    "title":  "SAMT Development Environment Check",
+    "timestampLocal":  "2026-08-04T09:52:10.4041712+04:00",
+    "timezone":  "Arabian Standard Time",
+    "repositoryPath":  "C:\\Projects\\worldmonitor",
+    "powershell":  {
+                       "edition":  "Desktop",
+                       "version":  "5.1.19041.3031",
+                       "executionPolicy":  4
+                   },
+    "operatingSystem":  {
+                            "description":  "Microsoft Windows 10.0.19044 ",
+                            "architecture":  "X64",
+                            "processArchitecture":  "X64"
+                        },
+    "tools":  [
+                  {
+                      "command":  "git",
+                      "installed":  true,
+                      "required":  true,
+                      "path":  "C:\\Program Files\\Git\\cmd\\git.exe",
+                      "version":  "git version 2.55.0.windows.3",
+                      "error":  null
+                  },
+                  {
+                      "command":  "node",
+                      "installed":  false,
+                      "required":  true,
+                      "path":  null,
+                      "version":  null,
+                      "error":  "Required command not found."
+                  },
+                  {
+                      "command":  "npm",
+                      "installed":  false,
+                      "required":  true,
+                      "path":  null,
+                      "version":  null,
+                      "error":  "Required command not found."
+                  },
+                  {
+                      "command":  "npx",
+                      "installed":  false,
+                      "required":  true,
+                      "path":  null,
+                      "version":  null,
+                      "error":  "Required command not found."
+                  },
+                  {
+                      "command":  "corepack",
+                      "installed":  false,
+                      "required":  false,
+                      "path":  null,
+                      "version":  null,
+                      "error":  "Optional command not found."
+                  },
+                  {
+                      "command":  "pnpm",
+                      "installed":  false,
+                      "required":  false,
+                      "path":  null,
+                      "version":  null,
+                      "error":  "Optional command not found."
+                  },
+                  {
+                      "command":  "yarn",
+                      "installed":  false,
+                      "required":  false,
+                      "path":  null,
+                      "version":  null,
+                      "error":  "Optional command not found."
+                  },
+                  {
+                      "command":  "docker",
+                      "installed":  false,
+                      "required":  false,
+                      "path":  null,
+                      "version":  null,
+                      "error":  "Optional command not found."
+                  },
+                  {
+                      "command":  "cargo",
+                      "installed":  false,
+                      "required":  false,
+                      "path":  null,
+                      "version":  null,
+                      "error":  "Optional command not found."
+                  },
+                  {
+                      "command":  "rustc",
+                      "installed":  false,
+                      "required":  false,
+                      "path":  null,
+                      "version":  null,
+                      "error":  "Optional command not found."
+                  }
+              ],
+    "repositoryFiles":  [
+                            {
+                                "name":  "package.json",
+                                "exists":  true,
+                                "path":  "C:\\Projects\\worldmonitor\\package.json"
+                            },
+                            {
+                                "name":  "package-lock.json",
+                                "exists":  true,
+                                "path":  "C:\\Projects\\worldmonitor\\package-lock.json"
+                            },
+                            {
+                                "name":  "pnpm-lock.yaml",
+                                "exists":  false,
+                                "path":  "C:\\Projects\\worldmonitor\\pnpm-lock.yaml"
+                            },
+                            {
+                                "name":  "yarn.lock",
+                                "exists":  false,
+                                "path":  "C:\\Projects\\worldmonitor\\yarn.lock"
+                            },
+                            {
+                                "name":  "Cargo.toml",
+                                "exists":  false,
+                                "path":  "C:\\Projects\\worldmonitor\\Cargo.toml"
+                            },
+                            {
+                                "name":  "docker-compose.yml",
+                                "exists":  true,
+                                "path":  "C:\\Projects\\worldmonitor\\docker-compose.yml"
+                            },
+                            {
+                                "name":  "docker-compose.yaml",
+                                "exists":  false,
+                                "path":  "C:\\Projects\\worldmonitor\\docker-compose.yaml"
+                            },
+                            {
+                                "name":  ".git",
+                                "exists":  true,
+                                "path":  "C:\\Projects\\worldmonitor\\.git"
+                            }
+                        ],
+    "git":  {
+                "branch":  "main",
+                "commit":  "1d9dcd0ef0d282961e6af75bbe469478ef57c22f",
+                "clean":  true,
+                "statusShort":  ""
+            },
+    "packageManager":  "npm",
+    "packageScripts":  [
+                           {
+                               "name":  "lint",
+                               "command":  "biome lint ./src ./server ./api ./tests ./e2e ./scripts ./middleware.ts \u0026\u0026 npm run lint:safe-html"
+                           },
+                           {
+                               "name":  "lint:fix",
+                               "command":  "biome check ./src ./server ./api ./tests ./e2e ./scripts ./middleware.ts --fix"
+                           },
+                           {
+                               "name":  "lint:boundaries",
+                               "command":  "node scripts/lint-boundaries.mjs"
+                           },
+                           {
+                               "name":  "lint:api-contract",
+                               "command":  "node scripts/enforce-sebuf-api-contract.mjs"
+                           },
+                           {
+                               "name":  "lint:safe-html",
+                               "command":  "node scripts/enforce-safe-html.mjs"
+                           },
+                           {
+                               "name":  "lint:rate-limit-policies",
+                               "command":  "tsx scripts/enforce-rate-limit-policies.mjs"
+                           },
+                           {
+                               "name":  "lint:premium-fetch",
+                               "command":  "tsx scripts/enforce-premium-fetch.mjs"
+                           },
+                           {
+                               "name":  "lint:mintlify-slugs",
+                               "command":  "node scripts/enforce-mintlify-reserved-slugs.mjs"
+                           },
+                           {
+                               "name":  "lint:public-docs",
+                               "command":  "node scripts/check-public-doc-plan-references.mjs"
+                           },
+                           {
+                               "name":  "lint:unicode",
+                               "command":  "node scripts/check-unicode-safety.mjs"
+                           },
+                           {
+                               "name":  "lint:unicode:staged",
+                               "command":  "node scripts/check-unicode-safety.mjs --staged"
+                           },
+                           {
+                               "name":  "security:local-env-dumps",
+                               "command":  "node scripts/check-local-secret-dumps.mjs"
+                           },
+                           {
+                               "name":  "security:vite-env-secrets",
+                               "command":  "node scripts/check-vite-env-secrets.mjs"
+                           },
+                           {
+                               "name":  "worktree:bootstrap",
+                               "command":  "node scripts/bootstrap-worktree.mjs"
+                           },
+                           {
+                               "name":  "worktree:bootstrap:test-only",
+                               "command":  "node scripts/bootstrap-worktree.mjs --ignore-scripts"
+                           },
+                           {
+                               "name":  "worktree:env",
+                               "command":  "node scripts/bootstrap-worktree.mjs --skip-install"
+                           },
+                           {
+                               "name":  "lint:md",
+                               "command":  "markdownlint-cli2 \u0027**/*.md\u0027 \u0027!**/node_modules/**\u0027 \u0027!.agent/**\u0027 \u0027!.agents/**\u0027 \u0027!.claude/**\u0027 \u0027!.factory/**\u0027 \u0027!.windsurf/**\u0027 \u0027!skills/**\u0027 \u0027!docs/internal/**\u0027 \u0027!docs/Docs_To_Review/**\u0027 \u0027!docs/archive/**\u0027 \u0027!todos/**\u0027 \u0027!docs/plans/**\u0027 \u0027!docs/brainstorms/**\u0027 \u0027!docs/ideation/**\u0027"
+                           },
+                           {
+                               "name":  "version:sync",
+                               "command":  "node scripts/sync-desktop-version.mjs"
+                           },
+                           {
+                               "name":  "version:check",
+                               "command":  "node scripts/sync-desktop-version.mjs --check"
+                           },
+                           {
+                               "name":  "desktop:check-env",
+                               "command":  "node scripts/check-desktop-build-env.mjs"
+                           },
+                           {
+                               "name":  "desktop:check-rust-floors",
+                               "command":  "node scripts/check-rust-security-floors.mjs"
+                           },
+                           {
+                               "name":  "sync:locales",
+                               "command":  "node scripts/sync-locale-keys.mjs"
+                           },
+                           {
+                               "name":  "sync:locales:check",
+                               "command":  "node scripts/sync-locale-keys.mjs --check"
+                           },
+                           {
+                               "name":  "sync:bootstrap-tier-keys",
+                               "command":  "node scripts/sync-bootstrap-tier-keys.mjs"
+                           },
+                           {
+                               "name":  "sync:bootstrap-tier-keys:check",
+                               "command":  "node scripts/sync-bootstrap-tier-keys.mjs --check"
+                           },
+                           {
+                               "name":  "sandbox:fixtures",
+                               "command":  "node scripts/generate-sandbox-fixtures.mjs"
+                           },
+                           {
+                               "name":  "sandbox:fixtures:check",
+                               "command":  "node scripts/generate-sandbox-fixtures.mjs --check"
+                           },
+                           {
+                               "name":  "product:facts",
+                               "command":  "node --import tsx scripts/generate-product-config.mjs \u0026\u0026 node --import tsx scripts/generate-public-product-facts.mjs"
+                           },
+                           {
+                               "name":  "product:facts:check",
+                               "command":  "node --import tsx scripts/generate-public-product-facts.mjs --check"
+                           },
+                           {
+                               "name":  "docs:stats",
+                               "command":  "node scripts/docs-stats.mjs"
+                           },
+                           {
+                               "name":  "docs:check",
+                               "command":  "node scripts/docs-stats.mjs --check"
+                           },
+                           {
+                               "name":  "dev",
+                               "command":  "vite"
+                           },
+                           {
+                               "name":  "dev:tech",
+                               "command":  "cross-env VITE_VARIANT=tech vite"
+                           },
+                           {
+                               "name":  "dev:finance",
+                               "command":  "cross-env VITE_VARIANT=finance vite"
+                           },
+                           {
+                               "name":  "dev:happy",
+                               "command":  "cross-env VITE_VARIANT=happy vite"
+                           },
+                           {
+                               "name":  "dev:commodity",
+                               "command":  "cross-env VITE_VARIANT=commodity vite"
+                           },
+                           {
+                               "name":  "dev:energy",
+                               "command":  "cross-env VITE_VARIANT=energy vite"
+                           },
+                           {
+                               "name":  "postinstall",
+                               "command":  "cd blog-site \u0026\u0026 npm ci --prefer-offline"
+                           },
+                           {
+                               "name":  "prebuild:blog",
+                               "command":  "npm run product:facts"
+                           },
+                           {
+                               "name":  "build:blog",
+                               "command":  "cd blog-site \u0026\u0026 npm run build \u0026\u0026 rm -rf ../public/blog \u0026\u0026 mkdir -p ../public/blog \u0026\u0026 cp -r dist/* ../public/blog/"
+                           },
+                           {
+                               "name":  "build:crawlable-corpus",
+                               "command":  "node --import tsx scripts/build-crawlable-corpus.mjs"
+                           },
+                           {
+                               "name":  "build:sitemap",
+                               "command":  "node scripts/build-sitemap.mjs"
+                           },
+                           {
+                               "name":  "build:sitemap:check",
+                               "command":  "npm run build:crawlable-corpus \u0026\u0026 node scripts/build-sitemap.mjs --check"
+                           },
+                           {
+                               "name":  "verify:sitemaps",
+                               "command":  "node scripts/verify-sitemaps.mjs"
+                           },
+                           {
+                               "name":  "prebuild:pro",
+                               "command":  "npm run product:facts"
+                           },
+                           {
+                               "name":  "build:pro",
+                               "command":  "cd pro-test \u0026\u0026 npm ci \u0026\u0026 npm run build"
+                           },
+                           {
+                               "name":  "build:openapi",
+                               "command":  "node -e \"require(\u0027fs\u0027).cpSync(\u0027docs/api/worldmonitor.openapi.yaml\u0027, \u0027public/openapi.yaml\u0027)\" \u0026\u0026 node scripts/build-openapi-json.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:security",
+                               "command":  "node scripts/openapi-inject-security.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:examples",
+                               "command":  "node scripts/openapi-inject-examples.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:required",
+                               "command":  "node scripts/openapi-inject-required.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:servers",
+                               "command":  "node scripts/openapi-inject-servers.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:deprecated",
+                               "command":  "node scripts/openapi-inject-deprecated.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:jmespath",
+                               "command":  "node scripts/openapi-inject-jmespath.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:webhooks",
+                               "command":  "node scripts/openapi-inject-webhooks.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:idempotency",
+                               "command":  "node scripts/openapi-inject-idempotency.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:rate-limit-errors",
+                               "command":  "node scripts/openapi-inject-rate-limit-errors.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:async-jobs",
+                               "command":  "node scripts/openapi-inject-async-jobs.mjs"
+                           },
+                           {
+                               "name":  "gen:openapi:china-decision-signals",
+                               "command":  "node scripts/openapi-inject-china-decision-signals.mjs"
+                           },
+                           {
+                               "name":  "build:agent-skills",
+                               "command":  "node scripts/build-agent-skills-index.mjs"
+                           },
+                           {
+                               "name":  "prebuild",
+                               "command":  "npm run product:facts \u0026\u0026 npm run build:openapi \u0026\u0026 npm run build:agent-skills"
+                           },
+                           {
+                               "name":  "build",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run build:blog \u0026\u0026 npm run build:crawlable-corpus \u0026\u0026 npm run build:sitemap \u0026\u0026 tsc \u0026\u0026 vite build"
+                           },
+                           {
+                               "name":  "build:sidecar-sebuf",
+                               "command":  "node scripts/build-sidecar-sebuf.mjs"
+                           },
+                           {
+                               "name":  "build:desktop",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 node scripts/build-sidecar-sebuf.mjs \u0026\u0026 node scripts/build-sidecar-handlers.mjs \u0026\u0026 tsc \u0026\u0026 vite build"
+                           },
+                           {
+                               "name":  "prebuild:full",
+                               "command":  "npm run product:facts"
+                           },
+                           {
+                               "name":  "build:full",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run build:openapi \u0026\u0026 npm run build:agent-skills \u0026\u0026 npm run build:blog \u0026\u0026 npm run build:crawlable-corpus \u0026\u0026 npm run build:sitemap \u0026\u0026 cross-env-shell VITE_VARIANT=full \"tsc \u0026\u0026 vite build\""
+                           },
+                           {
+                               "name":  "prebuild:tech",
+                               "command":  "npm run product:facts"
+                           },
+                           {
+                               "name":  "build:tech",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run build:openapi \u0026\u0026 npm run build:agent-skills \u0026\u0026 cross-env-shell VITE_VARIANT=tech \"tsc \u0026\u0026 vite build\""
+                           },
+                           {
+                               "name":  "prebuild:finance",
+                               "command":  "npm run product:facts"
+                           },
+                           {
+                               "name":  "build:finance",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run build:openapi \u0026\u0026 npm run build:agent-skills \u0026\u0026 cross-env-shell VITE_VARIANT=finance \"tsc \u0026\u0026 vite build\""
+                           },
+                           {
+                               "name":  "prebuild:happy",
+                               "command":  "npm run product:facts"
+                           },
+                           {
+                               "name":  "build:happy",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run build:openapi \u0026\u0026 npm run build:agent-skills \u0026\u0026 cross-env-shell VITE_VARIANT=happy \"tsc \u0026\u0026 vite build\""
+                           },
+                           {
+                               "name":  "prebuild:commodity",
+                               "command":  "npm run product:facts"
+                           },
+                           {
+                               "name":  "build:commodity",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run build:openapi \u0026\u0026 npm run build:agent-skills \u0026\u0026 cross-env-shell VITE_VARIANT=commodity \"tsc \u0026\u0026 vite build\""
+                           },
+                           {
+                               "name":  "prebuild:energy",
+                               "command":  "npm run product:facts"
+                           },
+                           {
+                               "name":  "build:energy",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run build:openapi \u0026\u0026 npm run build:agent-skills \u0026\u0026 cross-env-shell VITE_VARIANT=energy \"tsc \u0026\u0026 vite build\""
+                           },
+                           {
+                               "name":  "typecheck",
+                               "command":  "tsc --noEmit"
+                           },
+                           {
+                               "name":  "typecheck:api",
+                               "command":  "tsc --noEmit -p tsconfig.api.json \u0026\u0026 node scripts/audit-convex-string-calls.cjs"
+                           },
+                           {
+                               "name":  "typecheck:all",
+                               "command":  "tsc --noEmit \u0026\u0026 tsc --noEmit -p tsconfig.api.json \u0026\u0026 node scripts/audit-convex-string-calls.cjs"
+                           },
+                           {
+                               "name":  "audit:convex-string-calls",
+                               "command":  "node scripts/audit-convex-string-calls.cjs"
+                           },
+                           {
+                               "name":  "audit:dodo-catalog",
+                               "command":  "node scripts/audit-dodo-catalog.cjs"
+                           },
+                           {
+                               "name":  "tauri",
+                               "command":  "tauri"
+                           },
+                           {
+                               "name":  "preview",
+                               "command":  "vite preview"
+                           },
+                           {
+                               "name":  "test:e2e:full",
+                               "command":  "cross-env VITE_VARIANT=full playwright test"
+                           },
+                           {
+                               "name":  "test:e2e:tech",
+                               "command":  "cross-env VITE_VARIANT=tech playwright test"
+                           },
+                           {
+                               "name":  "test:e2e:finance",
+                               "command":  "cross-env VITE_VARIANT=finance playwright test"
+                           },
+                           {
+                               "name":  "test:e2e:commodity",
+                               "command":  "cross-env VITE_VARIANT=commodity playwright test"
+                           },
+                           {
+                               "name":  "test:e2e:energy",
+                               "command":  "cross-env VITE_VARIANT=energy playwright test"
+                           },
+                           {
+                               "name":  "test:e2e:happy",
+                               "command":  "cross-env VITE_VARIANT=happy playwright test"
+                           },
+                           {
+                               "name":  "test:e2e:runtime",
+                               "command":  "cross-env VITE_VARIANT=full playwright test e2e/runtime-fetch.spec.ts"
+                           },
+                           {
+                               "name":  "test:e2e:mcp-grant",
+                               "command":  "cross-env VITE_VARIANT=full playwright test e2e/mcp-grant-consent.spec.ts"
+                           },
+                           {
+                               "name":  "test:e2e:news-budget",
+                               "command":  "cross-env VITE_VARIANT=full playwright test e2e/dashboard-news-request-budget.spec.ts"
+                           },
+                           {
+                               "name":  "test:e2e:variant-smoke:full",
+                               "command":  "cross-env VITE_VARIANT=full playwright test e2e/variant-live-smoke.spec.ts"
+                           },
+                           {
+                               "name":  "test:e2e:variant-smoke:tech",
+                               "command":  "cross-env VITE_VARIANT=tech playwright test e2e/variant-live-smoke.spec.ts"
+                           },
+                           {
+                               "name":  "test:e2e:variant-smoke:finance",
+                               "command":  "cross-env VITE_VARIANT=finance playwright test e2e/variant-live-smoke.spec.ts"
+                           },
+                           {
+                               "name":  "test:e2e:variant-smoke:commodity",
+                               "command":  "cross-env VITE_VARIANT=commodity playwright test e2e/variant-live-smoke.spec.ts"
+                           },
+                           {
+                               "name":  "test:e2e:variant-smoke:energy",
+                               "command":  "cross-env VITE_VARIANT=energy playwright test e2e/variant-live-smoke.spec.ts"
+                           },
+                           {
+                               "name":  "test:e2e:variant-smoke:happy",
+                               "command":  "cross-env VITE_VARIANT=happy playwright test e2e/variant-live-smoke.spec.ts"
+                           },
+                           {
+                               "name":  "test:e2e:variant-smoke",
+                               "command":  "npm run test:e2e:variant-smoke:full \u0026\u0026 npm run test:e2e:variant-smoke:tech \u0026\u0026 npm run test:e2e:variant-smoke:finance \u0026\u0026 npm run test:e2e:variant-smoke:commodity \u0026\u0026 npm run test:e2e:variant-smoke:energy \u0026\u0026 npm run test:e2e:variant-smoke:happy"
+                           },
+                           {
+                               "name":  "test:e2e",
+                               "command":  "npm run test:e2e:runtime \u0026\u0026 npm run test:e2e:full \u0026\u0026 npm run test:e2e:tech \u0026\u0026 npm run test:e2e:finance \u0026\u0026 npm run test:e2e:energy"
+                           },
+                           {
+                               "name":  "report:geo-coverage",
+                               "command":  "node scripts/geo-coverage-report.mjs"
+                           },
+                           {
+                               "name":  "test:data",
+                               "command":  "tsx --test --test-concurrency=16 tests/*.test.mjs tests/*.test.mts cli/test/*.test.mjs api/security/report.test.mjs"
+                           },
+                           {
+                               "name":  "test:resilience-validation-smoke",
+                               "command":  "tsx --test tests/resilience-validation-artifacts-schema.test.mts tests/benchmark-resilience-external.test.mjs tests/backtest-resilience-outcomes.test.mjs tests/resilience-sensitivity-v2.test.mts tests/seed-bundle-resilience-validation.test.mjs tests/resilience-validation-import-graph.test.mjs"
+                           },
+                           {
+                               "name":  "dryrun:resilience",
+                               "command":  "node --import tsx/esm scripts/dry-run-resilience-rebalance.mjs"
+                           },
+                           {
+                               "name":  "test:feeds",
+                               "command":  "node scripts/validate-rss-feeds.mjs"
+                           },
+                           {
+                               "name":  "test:feeds:ci",
+                               "command":  "node scripts/validate-rss-feeds.mjs --ci"
+                           },
+                           {
+                               "name":  "test:sidecar",
+                               "command":  "node --test src-tauri/sidecar/local-api-server.test.mjs src-tauri/open-url-safety.test.mjs api/_cors.test.mjs api/_session.test.mjs api/_api-key.test.mjs api/_user-api-key.test.mjs api/_rate-limit.test.mjs api/_sentry-common.test.mjs api/bootstrap-auth.test.mjs api/wm-session.test.mjs api/product-catalog.test.mjs api/youtube/embed.test.mjs api/cyber-threats.test.mjs api/usni-fleet.test.mjs api/rss-proxy.test.mjs scripts/ais-relay-rss.test.cjs scripts/ais-relay-ingestion.test.cjs scripts/ais-relay-entity-decode.test.cjs api/loaders-xml-wms-regression.test.mjs api/security/report.test.mjs"
+                           },
+                           {
+                               "name":  "test:e2e:visual:full",
+                               "command":  "cross-env VITE_VARIANT=full playwright test -g \"matches golden screenshots per layer and zoom\""
+                           },
+                           {
+                               "name":  "test:e2e:visual:tech",
+                               "command":  "cross-env VITE_VARIANT=tech playwright test -g \"matches golden screenshots per layer and zoom\""
+                           },
+                           {
+                               "name":  "test:e2e:visual",
+                               "command":  "npm run test:e2e:visual:full \u0026\u0026 npm run test:e2e:visual:tech"
+                           },
+                           {
+                               "name":  "test:e2e:visual:update:full",
+                               "command":  "cross-env VITE_VARIANT=full playwright test -g \"matches golden screenshots per layer and zoom\" --update-snapshots"
+                           },
+                           {
+                               "name":  "test:e2e:visual:update:tech",
+                               "command":  "cross-env VITE_VARIANT=tech playwright test -g \"matches golden screenshots per layer and zoom\" --update-snapshots"
+                           },
+                           {
+                               "name":  "test:e2e:visual:update",
+                               "command":  "npm run test:e2e:visual:update:full \u0026\u0026 npm run test:e2e:visual:update:tech"
+                           },
+                           {
+                               "name":  "desktop:dev",
+                               "command":  "npm run version:sync \u0026\u0026 cross-env VITE_DESKTOP_RUNTIME=1 tauri dev -f devtools"
+                           },
+                           {
+                               "name":  "desktop:build:full",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run desktop:check-env \u0026\u0026 npm run version:sync \u0026\u0026 cross-env VITE_VARIANT=full VITE_DESKTOP_RUNTIME=1 tauri build"
+                           },
+                           {
+                               "name":  "desktop:build:tech",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run desktop:check-env \u0026\u0026 npm run version:sync \u0026\u0026 cross-env VITE_VARIANT=tech VITE_DESKTOP_RUNTIME=1 tauri build --config src-tauri/tauri.tech.conf.json"
+                           },
+                           {
+                               "name":  "desktop:build:finance",
+                               "command":  "npm run security:vite-env-secrets -- --strict-local \u0026\u0026 npm run desktop:check-env \u0026\u0026 npm run version:sync \u0026\u0026 cross-env VITE_VARIANT=finance VITE_DESKTOP_RUNTIME=1 tauri build --config src-tauri/tauri.finance.conf.json"
+                           },
+                           {
+                               "name":  "desktop:package:macos:full",
+                               "command":  "node scripts/desktop-package.mjs --os macos --variant full"
+                           },
+                           {
+                               "name":  "desktop:package:macos:tech",
+                               "command":  "node scripts/desktop-package.mjs --os macos --variant tech"
+                           },
+                           {
+                               "name":  "desktop:package:windows:full",
+                               "command":  "node scripts/desktop-package.mjs --os windows --variant full"
+                           },
+                           {
+                               "name":  "desktop:package:windows:tech",
+                               "command":  "node scripts/desktop-package.mjs --os windows --variant tech"
+                           },
+                           {
+                               "name":  "desktop:package:macos:full:sign",
+                               "command":  "node scripts/desktop-package.mjs --os macos --variant full --sign"
+                           },
+                           {
+                               "name":  "desktop:package:macos:tech:sign",
+                               "command":  "node scripts/desktop-package.mjs --os macos --variant tech --sign"
+                           },
+                           {
+                               "name":  "desktop:package:windows:full:sign",
+                               "command":  "node scripts/desktop-package.mjs --os windows --variant full --sign"
+                           },
+                           {
+                               "name":  "desktop:package:windows:tech:sign",
+                               "command":  "node scripts/desktop-package.mjs --os windows --variant tech --sign"
+                           },
+                           {
+                               "name":  "desktop:package",
+                               "command":  "node scripts/desktop-package.mjs"
+                           },
+                           {
+                               "name":  "test:convex",
+                               "command":  "vitest run --config vitest.config.mts"
+                           },
+                           {
+                               "name":  "test:dom",
+                               "command":  "vitest run --config vitest.dom.config.mts"
+                           },
+                           {
+                               "name":  "typecheck:dom-tests",
+                               "command":  "tsc --noEmit -p tsconfig.dom-tests.json"
+                           },
+                           {
+                               "name":  "test:convex:watch",
+                               "command":  "vitest --config vitest.config.mts"
+                           }
+                       ],
+    "notes":  [
+                  "One or more required tools are missing or failed version detection."
+              ]
+}

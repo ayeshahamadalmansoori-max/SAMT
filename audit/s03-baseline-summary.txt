@@ -1,0 +1,25 @@
+﻿SAMT S03 - Windows Localhost Baseline
+
+Date: 2026-08-04T11:18:33.6205999+04:00
+Branch: samt/transformation
+Commit: 1d9dcd0ef0d282961e6af75bbe469478ef57c22f
+Node: v24.19.0
+npm: 11.17.0
+
+Local development server:
+PASS - application listened successfully on http://localhost:3000
+
+Runtime observations:
+- Multiple upstream feed-fetch failures were observed.
+- Stale feed items were dropped according to the existing freshness logic.
+- Military-base data reported a missing active key or seed requirement.
+- These conditions were not replaced with simulated data.
+
+Full production build:
+NOT VERIFIED SUCCESSFUL
+- Static blog pages were generated.
+- The overall command returned exit code 1.
+- The observed failure involved Windows/npm shell compatibility with Unix commands
+  used by the build:blog post-build sequence.
+
+No SAMT interface modifications were made during this baseline phase.
