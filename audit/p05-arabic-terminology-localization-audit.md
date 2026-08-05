@@ -2,9 +2,9 @@
 
 ## Metadata
 
-- Timestamp: 2026-08-05T08:56:18.1026390+04:00
+- Timestamp: 2026-08-05T09:03:35.1056146+04:00
 - Branch: samt/transformation
-- Commit: 5a0284215da51d927aef1970fdfa14f4b89b6060
+- Commit: 58e694e6866cdc25c0b4f8ed8ac0070e443a399b
 - Working tree clean at start: True
 - Method: controlled glossary comparison and deterministic static repository scan
 
@@ -24,16 +24,16 @@
 
 ## Exact Glossary Coverage
 
-- Preferred Arabic found: 33
+- Preferred Arabic found: 25
 - Alternate or avoided Arabic found: 9
-- English found without preferred Arabic: 16
-- No exact locale match found: 158
+- English found without preferred Arabic: 19
+- No exact locale match found: 163
 
 Exact string matching is conservative. Missing an exact match does not prove that a concept is absent; contextual and key-level review remains required.
 
 ## Risks
 
-- Untranslated and duplicate-label risk rows: 1533
+- Untranslated and duplicate-label risk rows: 838
 - Mixed/LTR direction reference rows: 17
 - Formatting checks: 7
 

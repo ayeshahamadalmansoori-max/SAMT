@@ -40,6 +40,11 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
+# Windows PowerShell 5.1 console and pipeline encoding.
+[Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false)
+[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)
+$OutputEncoding = New-Object System.Text.UTF8Encoding($false)
+
 function Write-CsvSafe {
     param(
         [object[]]$Rows,
@@ -62,7 +67,10 @@ function Read-TextSafe {
     param([string]$Path)
 
     try {
-        return Get-Content -LiteralPath $Path -Raw -ErrorAction Stop
+        return [System.IO.File]::ReadAllText(
+            $Path,
+            [System.Text.Encoding]::UTF8
+        )
     }
     catch {
         return $null
@@ -254,8 +262,12 @@ $statusBefore = (& git status --short 2>&1 | Out-String).Trim()
 $timestamp = Get-Date
 $tracked = @(& git ls-files)
 
-$glossary = Get-Content -LiteralPath $glossaryResolved -Raw |
-    ConvertFrom-Json
+$glossaryText = [System.IO.File]::ReadAllText(
+    $glossaryResolved,
+    [System.Text.Encoding]::UTF8
+)
+
+$glossary = $glossaryText | ConvertFrom-Json
 
 $terminology = @($glossary.terminology)
 $statusLabels = @($glossary.statusLabels)
