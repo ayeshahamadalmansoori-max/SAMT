@@ -1,0 +1,6 @@
+﻿"component","filePath","hasArabicText","hasAria","hasRole","hasKeyboardHandler","hasDirAttribute","hasLangAttribute","hasBdiOrIsolation","reviewStatus"
+"Footer","pro-test/src/components/Footer.tsx","false","false","false","false","false","false","false","Requires manual component and visual review"
+"Logo","pro-test/src/components/Logo.tsx","false","true","false","false","false","false","false","Requires manual component and visual review"
+"PricingSection","pro-test/src/components/PricingSection.tsx","false","true","false","false","false","false","false","Requires manual component and visual review"
+"SoonBadge","pro-test/src/components/SoonBadge.tsx","false","false","false","false","false","false","false","Requires manual component and visual review"
+"WiredBadge","pro-test/src/components/WiredBadge.tsx","false","true","false","false","false","false","false","Requires manual component and visual review"
