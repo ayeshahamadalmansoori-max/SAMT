@@ -1,0 +1,2132 @@
+{
+  "schemaVersion": "1.0",
+  "sourceWorkbook": {
+    "name": "SAMT_Arabic_Intelligence_Terminology.xlsx",
+    "sha256": "15ab90104ebf00449cc4cfbbc9121ec014418c4db98a8d5c4b8a6f6da34621b2",
+    "workbookVersion": "1.0",
+    "extractedAt": "2026-08-05T04:49:09.089979+00:00"
+  },
+  "overview": [
+    [
+      "SAMT Arabic Intelligence Terminology",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Metric",
+      "Value",
+      null,
+      "Domain Code",
+      "English Domain",
+      "Term Count"
+    ],
+    [
+      "Total Terms",
+      137,
+      null,
+      "GEO",
+      "Geopolitics and Conflicts",
+      9
+    ],
+    [
+      "Domain Count",
+      15,
+      null,
+      "DEF",
+      "Security and Defence",
+      11
+    ],
+    [
+      "Workbook Version",
+      "1.0",
+      null,
+      "AVI",
+      "Aviation and Airspace",
+      8
+    ],
+    [
+      null,
+      null,
+      null,
+      "MAR",
+      "Maritime and Supply Chains",
+      7
+    ],
+    [
+      "Usage Notes",
+      null,
+      null,
+      "ENE",
+      "Energy and Resources",
+      7
+    ],
+    [
+      "Use this workbook as the controlled terminology reference for SAMT. English is the engineering working language; user-facing product content is Arabic-first and RTL. Preserve original technical identifiers and evidence names. Terms marked Mixed or LTR require bidirectional isolation in Arabic interfaces. Repository-specific terminology may be added only after the relevant capability is verified in code.",
+      null,
+      null,
+      "ECO",
+      "Economy and Markets",
+      10
+    ],
+    [
+      null,
+      null,
+      null,
+      "INF",
+      "Strategic Infrastructure",
+      6
+    ],
+    [
+      null,
+      null,
+      null,
+      "CYB",
+      "Cybersecurity and Communications",
+      8
+    ],
+    [
+      null,
+      null,
+      null,
+      "CLH",
+      "Climate, Disasters and Health",
+      9
+    ],
+    [
+      null,
+      null,
+      null,
+      "TEC",
+      "Technology and AI",
+      5
+    ],
+    [
+      null,
+      null,
+      null,
+      "SRC",
+      "Sources and Governance",
+      10
+    ],
+    [
+      null,
+      null,
+      null,
+      "INT",
+      "Intelligence Analysis",
+      20
+    ],
+    [
+      null,
+      null,
+      null,
+      "ALT",
+      "Alerts and Operations",
+      7
+    ],
+    [
+      null,
+      null,
+      null,
+      "IAM",
+      "Identity and Permissions",
+      11
+    ],
+    [
+      null,
+      null,
+      null,
+      "UX",
+      "User Experience and Platform",
+      9
+    ]
+  ],
+  "terminology": [
+    {
+      "ID": "TERM-001",
+      "Domain Code": "INT",
+      "English Term": "Open-Source Intelligence (OSINT)",
+      "Preferred Arabic": "الاستخبارات مفتوحة المصدر",
+      "Avoid / Alternate": "الاستخبارات من المصادر المفتوحة",
+      "Definition": "Intelligence derived from lawfully accessible public information.",
+      "UI Usage Guidance": "Use the full Arabic term on first mention; OSINT may follow in parentheses.",
+      "Direction": "LTR acronym"
+    },
+    {
+      "ID": "TERM-002",
+      "Domain Code": "INT",
+      "English Term": "Geospatial Intelligence (GEOINT)",
+      "Preferred Arabic": "الاستخبارات الجغرافية المكانية",
+      "Avoid / Alternate": "الاستخبارات الجغرافية",
+      "Definition": "Intelligence derived from analysis of imagery, geography, location and spatial relationships.",
+      "UI Usage Guidance": "Use GEOINT only in technical contexts.",
+      "Direction": "LTR acronym"
+    },
+    {
+      "ID": "TERM-003",
+      "Domain Code": "INT",
+      "English Term": "Situational Awareness",
+      "Preferred Arabic": "الوعي بالموقف",
+      "Avoid / Alternate": "الوعي الظرفي",
+      "Definition": "Understanding the current operational environment, changes, risks and relevant context.",
+      "UI Usage Guidance": "Preferred platform-wide term.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-004",
+      "Domain Code": "INT",
+      "English Term": "Signal",
+      "Preferred Arabic": "إشارة استخباراتية",
+      "Avoid / Alternate": "إشارة",
+      "Definition": "A relevant observation or derived indicator that may require monitoring or analysis.",
+      "UI Usage Guidance": "Use “إشارة” only where the intelligence context is already clear.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-005",
+      "Domain Code": "INT",
+      "English Term": "Observation",
+      "Preferred Arabic": "ملاحظة رصد",
+      "Avoid / Alternate": "ملاحظة",
+      "Definition": "A single collected item or detected state from a source.",
+      "UI Usage Guidance": "Not equivalent to a verified fact.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-006",
+      "Domain Code": "INT",
+      "English Term": "Event",
+      "Preferred Arabic": "حدث استخباراتي",
+      "Avoid / Alternate": "واقعة",
+      "Definition": "A bounded development correlated from one or more observations and signals.",
+      "UI Usage Guidance": "Use “حدث” in UI; definition must remain available.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-007",
+      "Domain Code": "INT",
+      "English Term": "Assessment",
+      "Preferred Arabic": "تقدير تحليلي",
+      "Avoid / Alternate": "تقييم",
+      "Definition": "Human or machine-supported judgment based on evidence and assumptions.",
+      "UI Usage Guidance": "Do not label machine output as analyst assessment.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-008",
+      "Domain Code": "INT",
+      "English Term": "Analyst Judgment",
+      "Preferred Arabic": "حكم المحلل",
+      "Avoid / Alternate": "رأي المحلل",
+      "Definition": "A documented human conclusion based on evidence, expertise and assumptions.",
+      "UI Usage Guidance": "Reserve for approved analyst input.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-009",
+      "Domain Code": "INT",
+      "English Term": "Verified Fact",
+      "Preferred Arabic": "حقيقة موثقة",
+      "Avoid / Alternate": "حقيقة مؤكدة",
+      "Definition": "Information meeting the approved verification standard.",
+      "UI Usage Guidance": "Do not use merely because a source is official.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-010",
+      "Domain Code": "INT",
+      "English Term": "Source Claim",
+      "Preferred Arabic": "ادعاء من المصدر",
+      "Avoid / Alternate": "رواية المصدر",
+      "Definition": "A statement attributed to a source and not automatically verified.",
+      "UI Usage Guidance": "Always preserve attribution.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-011",
+      "Domain Code": "INT",
+      "English Term": "Preliminary Indicator",
+      "Preferred Arabic": "مؤشر أولي",
+      "Avoid / Alternate": "إشارة أولية",
+      "Definition": "An early signal that requires additional verification.",
+      "UI Usage Guidance": "Common for social, Telegram and anomaly data.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-012",
+      "Domain Code": "INT",
+      "English Term": "Machine Inference",
+      "Preferred Arabic": "استنتاج آلي",
+      "Avoid / Alternate": "تحليل آلي",
+      "Definition": "A conclusion generated by a model or deterministic algorithm.",
+      "UI Usage Guidance": "Show model, evidence and confidence.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-013",
+      "Domain Code": "INT",
+      "English Term": "Forecast",
+      "Preferred Arabic": "توقع",
+      "Avoid / Alternate": "تنبؤ",
+      "Definition": "A forward-looking estimate with explicit uncertainty.",
+      "UI Usage Guidance": "Use “توقع” for intelligence products.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-014",
+      "Domain Code": "INT",
+      "English Term": "Scenario",
+      "Preferred Arabic": "سيناريو",
+      "Avoid / Alternate": "فرضية مستقبلية",
+      "Definition": "A structured possible future state used for planning and analysis.",
+      "UI Usage Guidance": "Do not present as prediction.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-015",
+      "Domain Code": "INT",
+      "English Term": "Confidence",
+      "Preferred Arabic": "درجة الثقة",
+      "Avoid / Alternate": "مستوى الثقة",
+      "Definition": "The assessed strength of support for an intelligence statement.",
+      "UI Usage Guidance": "Keep distinct from severity.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-016",
+      "Domain Code": "INT",
+      "English Term": "Corroboration",
+      "Preferred Arabic": "تأييد مستقل",
+      "Avoid / Alternate": "تأكيد",
+      "Definition": "Support from an independent source or observation.",
+      "UI Usage Guidance": "Independence must be assessed, not assumed.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-017",
+      "Domain Code": "INT",
+      "English Term": "Contradiction",
+      "Preferred Arabic": "تعارض في المعلومات",
+      "Avoid / Alternate": "تناقض",
+      "Definition": "Material disagreement between relevant sources or observations.",
+      "UI Usage Guidance": "Expose in evidence view.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-018",
+      "Domain Code": "INT",
+      "English Term": "Intelligence Gap",
+      "Preferred Arabic": "فجوة استخباراتية",
+      "Avoid / Alternate": "نقص معلومات",
+      "Definition": "Information required for a reliable assessment but currently unavailable.",
+      "UI Usage Guidance": "Use in analyst and executive briefs.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-019",
+      "Domain Code": "INT",
+      "English Term": "Source Convergence",
+      "Preferred Arabic": "تقارب المصادر",
+      "Avoid / Alternate": "تطابق المصادر",
+      "Definition": "Multiple independent sources reporting materially consistent information.",
+      "UI Usage Guidance": "Do not count syndicated copies as independent.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-020",
+      "Domain Code": "INT",
+      "English Term": "Cross-Domain Correlation",
+      "Preferred Arabic": "الربط بين المجالات",
+      "Avoid / Alternate": "الترابط متعدد المجالات",
+      "Definition": "Correlation across geopolitical, aviation, maritime, cyber, market or infrastructure data.",
+      "UI Usage Guidance": "Preferred analytical term.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-021",
+      "Domain Code": "GEO",
+      "English Term": "Geopolitical Hotspot",
+      "Preferred Arabic": "بؤرة جيوسياسية ساخنة",
+      "Avoid / Alternate": "منطقة ساخنة",
+      "Definition": "Location with elevated geopolitical tension or activity.",
+      "UI Usage Guidance": "Avoid sensational wording.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-022",
+      "Domain Code": "GEO",
+      "English Term": "Conflict Zone",
+      "Preferred Arabic": "منطقة نزاع",
+      "Avoid / Alternate": "منطقة صراع",
+      "Definition": "Geographic area affected by armed conflict.",
+      "UI Usage Guidance": "Use source and time context.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-023",
+      "Domain Code": "GEO",
+      "English Term": "Civil Unrest",
+      "Preferred Arabic": "اضطرابات مدنية",
+      "Avoid / Alternate": "اضطرابات شعبية",
+      "Definition": "Protests, riots, strikes or related public disorder.",
+      "UI Usage Guidance": "Use neutral institutional wording.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-024",
+      "Domain Code": "GEO",
+      "English Term": "Cross-Border Escalation",
+      "Preferred Arabic": "تصعيد عابر للحدود",
+      "Avoid / Alternate": "تصعيد حدودي",
+      "Definition": "Escalation involving activity across an international boundary.",
+      "UI Usage Guidance": "Use when geography is verified.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-025",
+      "Domain Code": "GEO",
+      "English Term": "Sanctions",
+      "Preferred Arabic": "عقوبات",
+      "Avoid / Alternate": "جزاءات",
+      "Definition": "Restrictive measures imposed by an authority or coalition.",
+      "UI Usage Guidance": "Specify issuing authority.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-026",
+      "Domain Code": "GEO",
+      "English Term": "Travel Advisory",
+      "Preferred Arabic": "إرشاد سفر رسمي",
+      "Avoid / Alternate": "تحذير سفر",
+      "Definition": "Official government advice regarding travel risk.",
+      "UI Usage Guidance": "Preserve issuer and date.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-027",
+      "Domain Code": "GEO",
+      "English Term": "Country Instability Score",
+      "Preferred Arabic": "مؤشر عدم استقرار الدولة",
+      "Avoid / Alternate": "درجة اضطراب الدولة",
+      "Definition": "Composite indicator of instability risk.",
+      "UI Usage Guidance": "Show methodology and data cutoff.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-028",
+      "Domain Code": "GEO",
+      "English Term": "Strategic Risk",
+      "Preferred Arabic": "مخاطر استراتيجية",
+      "Avoid / Alternate": "خطر استراتيجي",
+      "Definition": "Risk with significant implications for national or organizational objectives.",
+      "UI Usage Guidance": "Use plural for category labels.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-029",
+      "Domain Code": "GEO",
+      "English Term": "Displacement Flow",
+      "Preferred Arabic": "تدفق النزوح",
+      "Avoid / Alternate": "حركة النزوح",
+      "Definition": "Movement of displaced people across or within borders.",
+      "UI Usage Guidance": "Distinguish refugees, asylum-seekers and IDPs.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-030",
+      "Domain Code": "DEF",
+      "English Term": "Military Base",
+      "Preferred Arabic": "قاعدة عسكرية",
+      "Avoid / Alternate": "منشأة عسكرية",
+      "Definition": "Permanent or temporary military installation.",
+      "UI Usage Guidance": "Use the more specific term when known.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-031",
+      "Domain Code": "DEF",
+      "English Term": "Force Posture",
+      "Preferred Arabic": "وضع القوات",
+      "Avoid / Alternate": "تموضع القوات",
+      "Definition": "Distribution, readiness and operational configuration of forces.",
+      "UI Usage Guidance": "Preferred defence-analysis term.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-032",
+      "Domain Code": "DEF",
+      "English Term": "Military Surge",
+      "Preferred Arabic": "حشد عسكري متزايد",
+      "Avoid / Alternate": "تصعيد عسكري",
+      "Definition": "Unusual increase in military assets or activity.",
+      "UI Usage Guidance": "Requires baseline and confidence.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-033",
+      "Domain Code": "DEF",
+      "English Term": "Strike Package",
+      "Preferred Arabic": "تشكيل ضربة جوية",
+      "Avoid / Alternate": "حزمة ضربة",
+      "Definition": "Group of aircraft and support assets configured for a strike mission.",
+      "UI Usage Guidance": "Use only when evidence supports the interpretation.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-034",
+      "Domain Code": "DEF",
+      "English Term": "Theatre Posture",
+      "Preferred Arabic": "الوضع العسكري على مستوى مسرح العمليات",
+      "Avoid / Alternate": "وضع المسرح",
+      "Definition": "Operational posture across a defined theatre.",
+      "UI Usage Guidance": "Use in defence briefs.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-035",
+      "Domain Code": "DEF",
+      "English Term": "Military Aviation",
+      "Preferred Arabic": "الطيران العسكري",
+      "Avoid / Alternate": "الطيران الحربي",
+      "Definition": "Military aircraft activity and associated operations.",
+      "UI Usage Guidance": "Preferred neutral term.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-036",
+      "Domain Code": "DEF",
+      "English Term": "Naval Activity",
+      "Preferred Arabic": "نشاط بحري عسكري",
+      "Avoid / Alternate": "نشاط بحري",
+      "Definition": "Movement or operations of naval forces.",
+      "UI Usage Guidance": "Distinguish from commercial maritime activity.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-037",
+      "Domain Code": "DEF",
+      "English Term": "Nuclear Facility",
+      "Preferred Arabic": "منشأة نووية",
+      "Avoid / Alternate": "مرفق نووي",
+      "Definition": "Facility associated with nuclear research, energy, fuel cycle or related activity.",
+      "UI Usage Guidance": "Preserve source classification.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-038",
+      "Domain Code": "DEF",
+      "English Term": "Radiation Watch",
+      "Preferred Arabic": "مراقبة الإشعاع",
+      "Avoid / Alternate": "رصد إشعاعي",
+      "Definition": "Monitoring for changes in reported radiation levels.",
+      "UI Usage Guidance": "Do not imply causation without evidence.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-039",
+      "Domain Code": "DEF",
+      "English Term": "GPS Interference",
+      "Preferred Arabic": "تداخل في نظام تحديد المواقع",
+      "Avoid / Alternate": "تشويش GPS",
+      "Definition": "Degradation or disruption affecting GPS signals.",
+      "UI Usage Guidance": "Use broader GNSS term when applicable.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-040",
+      "Domain Code": "DEF",
+      "English Term": "GNSS Spoofing",
+      "Preferred Arabic": "خداع إشارات الملاحة عبر الأقمار الصناعية",
+      "Avoid / Alternate": "تزوير GPS",
+      "Definition": "Manipulation causing receivers to calculate false position or time.",
+      "UI Usage Guidance": "Use “GNSS” in technical evidence.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-041",
+      "Domain Code": "AVI",
+      "English Term": "ADS-B Tracking",
+      "Preferred Arabic": "تتبع الطائرات عبر ADS-B",
+      "Avoid / Alternate": "تتبع الرحلات",
+      "Definition": "Aircraft surveillance based on ADS-B broadcasts.",
+      "UI Usage Guidance": "Preserve ADS-B in LTR.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-042",
+      "Domain Code": "AVI",
+      "English Term": "Aircraft Position",
+      "Preferred Arabic": "موقع الطائرة",
+      "Avoid / Alternate": "موضع الطائرة",
+      "Definition": "Reported or estimated geographic position of an aircraft.",
+      "UI Usage Guidance": "Show live/delayed/estimated state.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-043",
+      "Domain Code": "AVI",
+      "English Term": "Ground Stop",
+      "Preferred Arabic": "إيقاف أرضي للرحلات",
+      "Avoid / Alternate": "تعليق الإقلاع",
+      "Definition": "An air-traffic measure preventing specified departures.",
+      "UI Usage Guidance": "Preserve issuing authority.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-044",
+      "Domain Code": "AVI",
+      "English Term": "Diversion",
+      "Preferred Arabic": "تحويل مسار الرحلة",
+      "Avoid / Alternate": "تغيير وجهة الرحلة",
+      "Definition": "A flight landing at an airport other than the planned destination.",
+      "UI Usage Guidance": "Distinguish operational diversion from route change.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-045",
+      "Domain Code": "AVI",
+      "English Term": "Airspace Closure",
+      "Preferred Arabic": "إغلاق المجال الجوي",
+      "Avoid / Alternate": "إقفال المجال الجوي",
+      "Definition": "Official or operational closure of defined airspace.",
+      "UI Usage Guidance": "Show geography and effective period.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-046",
+      "Domain Code": "AVI",
+      "English Term": "NOTAM",
+      "Preferred Arabic": "إشعار للطيارين (NOTAM)",
+      "Avoid / Alternate": "تنبيه ملاحي",
+      "Definition": "Official aeronautical notice affecting flight operations.",
+      "UI Usage Guidance": "Keep NOTAM in LTR and preserve original text.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-047",
+      "Domain Code": "AVI",
+      "English Term": "Airport Delay",
+      "Preferred Arabic": "تأخر عمليات المطار",
+      "Avoid / Alternate": "تأخير المطار",
+      "Definition": "Operational delay affecting an airport or flights.",
+      "UI Usage Guidance": "Show source and metric definition.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-048",
+      "Domain Code": "AVI",
+      "English Term": "Route Monitoring",
+      "Preferred Arabic": "مراقبة المسارات الجوية",
+      "Avoid / Alternate": "تتبع الخطوط",
+      "Definition": "Monitoring selected flight routes or corridors.",
+      "UI Usage Guidance": "Use for watchlists and exposure.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-049",
+      "Domain Code": "MAR",
+      "English Term": "Automatic Identification System (AIS)",
+      "Preferred Arabic": "نظام التعريف الآلي للسفن (AIS)",
+      "Avoid / Alternate": "نظام تتبع السفن",
+      "Definition": "Maritime broadcast system used to identify and track vessels.",
+      "UI Usage Guidance": "Keep AIS in LTR.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-050",
+      "Domain Code": "MAR",
+      "English Term": "Vessel Position",
+      "Preferred Arabic": "موقع السفينة",
+      "Avoid / Alternate": "موضع السفينة",
+      "Definition": "Reported or estimated location of a vessel.",
+      "UI Usage Guidance": "Show live, delayed or inferred state.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-051",
+      "Domain Code": "MAR",
+      "English Term": "Dark Shipping",
+      "Preferred Arabic": "شحن بحري معتم",
+      "Avoid / Alternate": "الشحن المظلم",
+      "Definition": "Maritime behavior intended to reduce visibility or attribution, such as suspicious AIS gaps.",
+      "UI Usage Guidance": "Use as an indicator, not proof of wrongdoing.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-052",
+      "Domain Code": "MAR",
+      "English Term": "Maritime Chokepoint",
+      "Preferred Arabic": "ممر بحري استراتيجي ضيق",
+      "Avoid / Alternate": "عنق زجاجة بحري",
+      "Definition": "Narrow route whose disruption can affect trade or security.",
+      "UI Usage Guidance": "Preferred for Hormuz, Bab Al-Mandab, Suez, etc.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-053",
+      "Domain Code": "MAR",
+      "English Term": "Port Throughput",
+      "Preferred Arabic": "حجم مناولة الميناء",
+      "Avoid / Alternate": "إنتاجية الميناء",
+      "Definition": "Volume of cargo, containers or vessels handled by a port.",
+      "UI Usage Guidance": "Specify metric and period.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-054",
+      "Domain Code": "MAR",
+      "English Term": "Route Exposure",
+      "Preferred Arabic": "التعرض لمخاطر المسار",
+      "Avoid / Alternate": "مخاطر الطريق",
+      "Definition": "Risk affecting a route due to events, infrastructure or policy.",
+      "UI Usage Guidance": "Use for aviation, maritime and land routes.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-055",
+      "Domain Code": "MAR",
+      "English Term": "Maritime Corridor Risk",
+      "Preferred Arabic": "مخاطر الممر البحري",
+      "Avoid / Alternate": "خطر خط الملاحة",
+      "Definition": "Assessed risk affecting a defined maritime corridor.",
+      "UI Usage Guidance": "Show contributing factors.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-056",
+      "Domain Code": "ENE",
+      "English Term": "Oil Pipeline",
+      "Preferred Arabic": "خط أنابيب نفط",
+      "Avoid / Alternate": "أنبوب نفطي",
+      "Definition": "Infrastructure transporting crude oil or petroleum products.",
+      "UI Usage Guidance": "Use asset-specific name when available.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-057",
+      "Domain Code": "ENE",
+      "English Term": "Gas Storage",
+      "Preferred Arabic": "منشأة تخزين الغاز",
+      "Avoid / Alternate": "مخزون الغاز",
+      "Definition": "Facility or system used to store natural gas.",
+      "UI Usage Guidance": "Distinguish facility from inventory.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-058",
+      "Domain Code": "ENE",
+      "English Term": "LNG Terminal",
+      "Preferred Arabic": "محطة للغاز الطبيعي المسال",
+      "Avoid / Alternate": "ميناء LNG",
+      "Definition": "Facility for liquefaction, regasification or transfer of LNG.",
+      "UI Usage Guidance": "Keep LNG in LTR.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-059",
+      "Domain Code": "ENE",
+      "English Term": "Petroleum Inventory",
+      "Preferred Arabic": "مخزونات المنتجات البترولية",
+      "Avoid / Alternate": "احتياطي النفط",
+      "Definition": "Measured commercial or strategic petroleum stocks.",
+      "UI Usage Guidance": "Specify type and reporting authority.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-060",
+      "Domain Code": "ENE",
+      "English Term": "Energy Disruption",
+      "Preferred Arabic": "تعطل في إمدادات الطاقة",
+      "Avoid / Alternate": "انقطاع الطاقة",
+      "Definition": "Event affecting generation, production, transport or supply.",
+      "UI Usage Guidance": "Show affected assets and duration.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-061",
+      "Domain Code": "ENE",
+      "English Term": "Critical Minerals",
+      "Preferred Arabic": "معادن حرجة",
+      "Avoid / Alternate": "معادن استراتيجية",
+      "Definition": "Minerals important to economic or national-security supply chains.",
+      "UI Usage Guidance": "Use policy context.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-062",
+      "Domain Code": "ENE",
+      "English Term": "Commodity Market Indicator",
+      "Preferred Arabic": "مؤشر سوق السلع",
+      "Avoid / Alternate": "إشارة سلعية",
+      "Definition": "Measure or signal related to commodity prices, flows or stress.",
+      "UI Usage Guidance": "Show source and timeframe.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-063",
+      "Domain Code": "ECO",
+      "English Term": "Financial Stress",
+      "Preferred Arabic": "ضغوط مالية",
+      "Avoid / Alternate": "توتر مالي",
+      "Definition": "Market or institutional conditions indicating elevated financial strain.",
+      "UI Usage Guidance": "Show methodology.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-064",
+      "Domain Code": "ECO",
+      "English Term": "Sector Heat Map",
+      "Preferred Arabic": "خريطة حرارية للقطاعات",
+      "Avoid / Alternate": "خريطة القطاعات",
+      "Definition": "Visual summary of sector performance or risk.",
+      "UI Usage Guidance": "Provide accessible text alternative.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-065",
+      "Domain Code": "ECO",
+      "English Term": "Foreign Exchange (FX)",
+      "Preferred Arabic": "سوق الصرف الأجنبي",
+      "Avoid / Alternate": "العملات",
+      "Definition": "Trading and valuation of currencies.",
+      "UI Usage Guidance": "Keep FX in LTR in technical contexts.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-066",
+      "Domain Code": "ECO",
+      "English Term": "Bond Yield",
+      "Preferred Arabic": "عائد السند",
+      "Avoid / Alternate": "فائدة السند",
+      "Definition": "Return implied by a bond’s price and cash flows.",
+      "UI Usage Guidance": "Do not translate yield as interest rate in all contexts.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-067",
+      "Domain Code": "ECO",
+      "English Term": "Consumer Price Index (CPI)",
+      "Preferred Arabic": "مؤشر أسعار المستهلك",
+      "Avoid / Alternate": "التضخم",
+      "Definition": "Price index measuring changes in consumer goods and services.",
+      "UI Usage Guidance": "CPI is not identical to inflation.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-068",
+      "Domain Code": "ECO",
+      "English Term": "Gross Domestic Product (GDP)",
+      "Preferred Arabic": "الناتج المحلي الإجمالي",
+      "Avoid / Alternate": "الناتج القومي",
+      "Definition": "Value of final goods and services produced within an economy.",
+      "UI Usage Guidance": "Keep GDP in LTR where used.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-069",
+      "Domain Code": "ECO",
+      "English Term": "Stablecoin",
+      "Preferred Arabic": "عملة رقمية مستقرة",
+      "Avoid / Alternate": "عملة مستقرة",
+      "Definition": "Cryptoasset designed to maintain a stable value relative to a reference asset.",
+      "UI Usage Guidance": "Use regulatory context.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-070",
+      "Domain Code": "ECO",
+      "English Term": "ETF Flow",
+      "Preferred Arabic": "تدفقات الصناديق المتداولة",
+      "Avoid / Alternate": "تدفقات ETF",
+      "Definition": "Net subscriptions or redemptions in exchange-traded funds.",
+      "UI Usage Guidance": "Keep ETF in LTR where space is limited.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-071",
+      "Domain Code": "ECO",
+      "English Term": "Trade Flow",
+      "Preferred Arabic": "تدفق التجارة",
+      "Avoid / Alternate": "حركة التجارة",
+      "Definition": "Movement and value of goods or services between economies.",
+      "UI Usage Guidance": "Specify source and period.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-072",
+      "Domain Code": "ECO",
+      "English Term": "Procurement Opportunity",
+      "Preferred Arabic": "فرصة مشتريات",
+      "Avoid / Alternate": "مناقصة",
+      "Definition": "Published purchasing opportunity; not always a formal tender.",
+      "UI Usage Guidance": "Use precise subtype when known.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-073",
+      "Domain Code": "INF",
+      "English Term": "Undersea Cable",
+      "Preferred Arabic": "كابل بحري",
+      "Avoid / Alternate": "كابل تحت البحر",
+      "Definition": "Submarine telecommunications or power cable.",
+      "UI Usage Guidance": "Use asset category in map legends.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-074",
+      "Domain Code": "INF",
+      "English Term": "Data Centre",
+      "Preferred Arabic": "مركز بيانات",
+      "Avoid / Alternate": "مركز معلومات",
+      "Definition": "Facility hosting computing and storage infrastructure.",
+      "UI Usage Guidance": "Preferred UAE spelling may follow organizational standards.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-075",
+      "Domain Code": "INF",
+      "English Term": "Cloud Region",
+      "Preferred Arabic": "منطقة سحابية",
+      "Avoid / Alternate": "إقليم سحابي",
+      "Definition": "Geographic deployment region for cloud services.",
+      "UI Usage Guidance": "Use provider’s official region name.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-076",
+      "Domain Code": "INF",
+      "English Term": "Infrastructure Exposure",
+      "Preferred Arabic": "تعرض البنية التحتية للمخاطر",
+      "Avoid / Alternate": "مخاطر البنية التحتية",
+      "Definition": "Relationship between events and potentially affected assets.",
+      "UI Usage Guidance": "Show method and radius/network logic.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-077",
+      "Domain Code": "INF",
+      "English Term": "Cascading Risk",
+      "Preferred Arabic": "مخاطر متسلسلة",
+      "Avoid / Alternate": "خطر متتابع",
+      "Definition": "Risk that disruption in one asset causes effects across connected systems.",
+      "UI Usage Guidance": "Preferred term for infrastructure analysis.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-078",
+      "Domain Code": "INF",
+      "English Term": "Strategic Waterway",
+      "Preferred Arabic": "ممر مائي استراتيجي",
+      "Avoid / Alternate": "مجرى مائي استراتيجي",
+      "Definition": "Waterway with significant trade, energy or security importance.",
+      "UI Usage Guidance": "Use with chokepoint taxonomy.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-079",
+      "Domain Code": "CYB",
+      "English Term": "Internet Outage",
+      "Preferred Arabic": "انقطاع الإنترنت",
+      "Avoid / Alternate": "تعطل الشبكة",
+      "Definition": "Loss or significant degradation of internet connectivity.",
+      "UI Usage Guidance": "Show measurement limits.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-080",
+      "Domain Code": "CYB",
+      "English Term": "Traffic Anomaly",
+      "Preferred Arabic": "شذوذ في حركة الشبكة",
+      "Avoid / Alternate": "خلل حركة البيانات",
+      "Definition": "Unexpected change in network traffic patterns.",
+      "UI Usage Guidance": "Anomaly is not automatically an attack.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-081",
+      "Domain Code": "CYB",
+      "English Term": "Malicious IP Address",
+      "Preferred Arabic": "عنوان IP ضار",
+      "Avoid / Alternate": "عنوان مشبوه",
+      "Definition": "IP address associated with malicious activity under a defined source rule.",
+      "UI Usage Guidance": "Keep IP in LTR.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-082",
+      "Domain Code": "CYB",
+      "English Term": "Command-and-Control Infrastructure",
+      "Preferred Arabic": "بنية قيادة وتحكم إلكترونية",
+      "Avoid / Alternate": "خوادم C2",
+      "Definition": "Infrastructure used to control compromised systems.",
+      "UI Usage Guidance": "Keep C2 in LTR when used.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-083",
+      "Domain Code": "CYB",
+      "English Term": "Malware Hosting",
+      "Preferred Arabic": "استضافة برمجيات خبيثة",
+      "Avoid / Alternate": "موقع ضار",
+      "Definition": "Infrastructure serving or distributing malware.",
+      "UI Usage Guidance": "Preserve source confidence.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-084",
+      "Domain Code": "CYB",
+      "English Term": "Phishing Indicator",
+      "Preferred Arabic": "مؤشر تصيد احتيالي",
+      "Avoid / Alternate": "رابط تصيد",
+      "Definition": "Domain, URL, email or infrastructure associated with phishing.",
+      "UI Usage Guidance": "Do not expose unsafe links as clickable by default.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-085",
+      "Domain Code": "CYB",
+      "English Term": "Ransomware Activity",
+      "Preferred Arabic": "نشاط برمجيات الفدية",
+      "Avoid / Alternate": "هجوم فدية",
+      "Definition": "Observed reporting, infrastructure or claims related to ransomware.",
+      "UI Usage Guidance": "Distinguish actor claims from verified incidents.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-086",
+      "Domain Code": "CYB",
+      "English Term": "Cyber Threat Geolocation",
+      "Preferred Arabic": "تحديد الموقع الجغرافي للتهديد السيبراني",
+      "Avoid / Alternate": "موقع الهجوم",
+      "Definition": "Estimated location associated with cyber infrastructure or activity.",
+      "UI Usage Guidance": "Expose limitations and confidence.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-087",
+      "Domain Code": "CLH",
+      "English Term": "Earthquake",
+      "Preferred Arabic": "زلزال",
+      "Avoid / Alternate": "هزة أرضية",
+      "Definition": "Seismic event reported by an authoritative or approved source.",
+      "UI Usage Guidance": "Show magnitude, depth, time and source.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-088",
+      "Domain Code": "CLH",
+      "English Term": "Tropical Cyclone",
+      "Preferred Arabic": "إعصار مداري",
+      "Avoid / Alternate": "عاصفة مدارية",
+      "Definition": "Rotating tropical weather system classified by an authority.",
+      "UI Usage Guidance": "Preserve official storm name.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-089",
+      "Domain Code": "CLH",
+      "English Term": "Wildfire",
+      "Preferred Arabic": "حريق غابات",
+      "Avoid / Alternate": "حريق بري",
+      "Definition": "Uncontrolled vegetation fire.",
+      "UI Usage Guidance": "Distinguish reported event from satellite detection.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-090",
+      "Domain Code": "CLH",
+      "English Term": "Satellite Fire Detection",
+      "Preferred Arabic": "رصد حرائق بالأقمار الصناعية",
+      "Avoid / Alternate": "نقطة حريق",
+      "Definition": "Thermal anomaly detected by satellite sensors.",
+      "UI Usage Guidance": "Indicator only; may contain false positives.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-091",
+      "Domain Code": "CLH",
+      "English Term": "Drought",
+      "Preferred Arabic": "جفاف",
+      "Avoid / Alternate": "شح الأمطار",
+      "Definition": "Prolonged water deficit assessed through meteorological or hydrological indicators.",
+      "UI Usage Guidance": "Specify indicator.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-092",
+      "Domain Code": "CLH",
+      "English Term": "Temperature Anomaly",
+      "Preferred Arabic": "انحراف درجات الحرارة",
+      "Avoid / Alternate": "شذوذ حراري",
+      "Definition": "Difference from a reference climatology.",
+      "UI Usage Guidance": "Show baseline period.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-093",
+      "Domain Code": "CLH",
+      "English Term": "Disease Outbreak",
+      "Preferred Arabic": "تفشٍ مرضي",
+      "Avoid / Alternate": "انتشار وباء",
+      "Definition": "Increase in disease cases in a defined population or area.",
+      "UI Usage Guidance": "Preserve authority and case definition.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-094",
+      "Domain Code": "CLH",
+      "English Term": "Epidemiological Alert",
+      "Preferred Arabic": "تنبيه وبائي",
+      "Avoid / Alternate": "تحذير صحي",
+      "Definition": "Public-health alert related to disease or epidemiological conditions.",
+      "UI Usage Guidance": "Show issuing organization.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-095",
+      "Domain Code": "CLH",
+      "English Term": "Humanitarian Emergency",
+      "Preferred Arabic": "حالة طوارئ إنسانية",
+      "Avoid / Alternate": "أزمة إنسانية",
+      "Definition": "Situation requiring urgent humanitarian response.",
+      "UI Usage Guidance": "Use source and severity context.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-096",
+      "Domain Code": "TEC",
+      "English Term": "Artificial Intelligence Regulation",
+      "Preferred Arabic": "تنظيم الذكاء الاصطناعي",
+      "Avoid / Alternate": "قانون الذكاء الاصطناعي",
+      "Definition": "Rules, policy or legislation governing AI.",
+      "UI Usage Guidance": "Use jurisdiction and status.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-097",
+      "Domain Code": "TEC",
+      "English Term": "Semiconductor Signal",
+      "Preferred Arabic": "مؤشر في قطاع أشباه الموصلات",
+      "Avoid / Alternate": "إشارة رقائق",
+      "Definition": "Relevant development in semiconductor supply, demand, policy or production.",
+      "UI Usage Guidance": "Use in technology and supply-chain analysis.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-098",
+      "Domain Code": "TEC",
+      "English Term": "Startup Hub",
+      "Preferred Arabic": "مركز للشركات الناشئة",
+      "Avoid / Alternate": "حاضنة أعمال",
+      "Definition": "Geographic concentration of startup activity and supporting ecosystem.",
+      "UI Usage Guidance": "Distinguish hub from accelerator.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-099",
+      "Domain Code": "TEC",
+      "English Term": "Venture Capital",
+      "Preferred Arabic": "رأس المال الجريء",
+      "Avoid / Alternate": "رأس المال المخاطر",
+      "Definition": "Equity financing for high-growth private companies.",
+      "UI Usage Guidance": "Use organizational preferred term consistently.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-100",
+      "Domain Code": "TEC",
+      "English Term": "Platform Outage",
+      "Preferred Arabic": "تعطل منصة تقنية",
+      "Avoid / Alternate": "انقطاع خدمة",
+      "Definition": "Service disruption affecting a technology platform.",
+      "UI Usage Guidance": "Show provider status and independent evidence.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-101",
+      "Domain Code": "SRC",
+      "English Term": "Source Registry",
+      "Preferred Arabic": "سجل المصادر",
+      "Avoid / Alternate": "دليل المصادر",
+      "Definition": "Canonical inventory of sources, governance metadata and operational state.",
+      "UI Usage Guidance": "Primary administrative term.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-102",
+      "Domain Code": "SRC",
+      "English Term": "Source Governance",
+      "Preferred Arabic": "حوكمة المصادر",
+      "Avoid / Alternate": "إدارة المصادر",
+      "Definition": "Policies and decisions governing source inclusion, use, quality, licensing and review.",
+      "UI Usage Guidance": "Use for the program, not only administration.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-103",
+      "Domain Code": "SRC",
+      "English Term": "Credibility Tier",
+      "Preferred Arabic": "مستوى الموثوقية التحريرية",
+      "Avoid / Alternate": "تصنيف المصدر",
+      "Definition": "Structured rating of source reliability for intended use.",
+      "UI Usage Guidance": "Do not equate with truth of each item.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-104",
+      "Domain Code": "SRC",
+      "English Term": "State Affiliation",
+      "Preferred Arabic": "الارتباط بجهة حكومية",
+      "Avoid / Alternate": "مصدر حكومي",
+      "Definition": "Relationship between a source and a state or state-controlled entity.",
+      "UI Usage Guidance": "Allow declared, assessed, disputed and unknown.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-105",
+      "Domain Code": "SRC",
+      "English Term": "Propaganda Risk",
+      "Preferred Arabic": "مخاطر الدعاية أو التأثير",
+      "Avoid / Alternate": "خطر التضليل",
+      "Definition": "Risk that content serves influence, propaganda or conflict-party objectives.",
+      "UI Usage Guidance": "Do not use as a blanket truth judgment.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-106",
+      "Domain Code": "SRC",
+      "English Term": "Freshness SLA",
+      "Preferred Arabic": "اتفاقية مستوى حداثة البيانات",
+      "Avoid / Alternate": "زمن التحديث",
+      "Definition": "Expected maximum age before a source is considered delayed or stale.",
+      "UI Usage Guidance": "SLA may be internal even if source has no contract.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-107",
+      "Domain Code": "SRC",
+      "English Term": "Fallback Provider",
+      "Preferred Arabic": "مزود احتياطي",
+      "Avoid / Alternate": "مصدر بديل",
+      "Definition": "Provider used when the primary source is unavailable or insufficient.",
+      "UI Usage Guidance": "Show when active.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-108",
+      "Domain Code": "SRC",
+      "English Term": "Last Successful Collection",
+      "Preferred Arabic": "آخر عملية جمع ناجحة",
+      "Avoid / Alternate": "آخر تحديث",
+      "Definition": "Timestamp of the latest successful ingestion.",
+      "UI Usage Guidance": "Not identical to source publication time.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-109",
+      "Domain Code": "SRC",
+      "English Term": "Data Licence",
+      "Preferred Arabic": "ترخيص البيانات",
+      "Avoid / Alternate": "رخصة البيانات",
+      "Definition": "Terms controlling access, storage, display, reuse and redistribution.",
+      "UI Usage Guidance": "Record unknown where unresolved.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-110",
+      "Domain Code": "SRC",
+      "English Term": "Usage Restriction",
+      "Preferred Arabic": "قيد استخدام",
+      "Avoid / Alternate": "شرط استخدام",
+      "Definition": "Constraint on collection, caching, display, export or redistribution.",
+      "UI Usage Guidance": "Show in administration and exports.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-111",
+      "Domain Code": "ALT",
+      "English Term": "Critical Alert",
+      "Preferred Arabic": "تنبيه حرج",
+      "Avoid / Alternate": "تحذير حرج",
+      "Definition": "Alert with immediate or potentially severe operational impact.",
+      "UI Usage Guidance": "Reserve highest severity.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-112",
+      "Domain Code": "ALT",
+      "English Term": "High-Priority Signal",
+      "Preferred Arabic": "إشارة عالية الأولوية",
+      "Avoid / Alternate": "تنبيه مرتفع",
+      "Definition": "Signal requiring prompt analyst attention.",
+      "UI Usage Guidance": "Signal is not necessarily an alert.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-113",
+      "Domain Code": "ALT",
+      "English Term": "Acknowledge",
+      "Preferred Arabic": "إقرار بالاطلاع",
+      "Avoid / Alternate": "تأكيد الاستلام",
+      "Definition": "Record that a user has seen and accepted responsibility for an alert.",
+      "UI Usage Guidance": "Do not translate as approval.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-114",
+      "Domain Code": "ALT",
+      "English Term": "Assign",
+      "Preferred Arabic": "إسناد",
+      "Avoid / Alternate": "تعيين",
+      "Definition": "Assign an alert, task or review to a user or team.",
+      "UI Usage Guidance": "Use in operational workflows.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-115",
+      "Domain Code": "ALT",
+      "English Term": "Archive",
+      "Preferred Arabic": "أرشفة",
+      "Avoid / Alternate": "حفظ",
+      "Definition": "Move an item from active workflow while retaining history.",
+      "UI Usage Guidance": "Not equivalent to deletion.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-116",
+      "Domain Code": "ALT",
+      "English Term": "Suppression Window",
+      "Preferred Arabic": "فترة كبح التنبيهات",
+      "Avoid / Alternate": "فترة إسكات",
+      "Definition": "Time window preventing duplicate or repetitive alerts.",
+      "UI Usage Guidance": "Use in alert configuration.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-117",
+      "Domain Code": "ALT",
+      "English Term": "Escalation Rule",
+      "Preferred Arabic": "قاعدة تصعيد",
+      "Avoid / Alternate": "إجراء تصعيد",
+      "Definition": "Rule that raises severity, routing or approval based on conditions.",
+      "UI Usage Guidance": "Show trigger and owner.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-118",
+      "Domain Code": "IAM",
+      "English Term": "Least Privilege",
+      "Preferred Arabic": "أقل صلاحية لازمة",
+      "Avoid / Alternate": "الحد الأدنى للصلاحيات",
+      "Definition": "Grant only the access necessary for the task, scope and duration.",
+      "UI Usage Guidance": "Core permission principle.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-119",
+      "Domain Code": "IAM",
+      "English Term": "Role-Based Access Control (RBAC)",
+      "Preferred Arabic": "التحكم في الوصول القائم على الأدوار",
+      "Avoid / Alternate": "صلاحيات الأدوار",
+      "Definition": "Authorization based on assigned roles.",
+      "UI Usage Guidance": "Keep RBAC in LTR in technical documentation.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-120",
+      "Domain Code": "IAM",
+      "English Term": "Attribute-Based Access Control (ABAC)",
+      "Preferred Arabic": "التحكم في الوصول القائم على السمات",
+      "Avoid / Alternate": "صلاحيات السمات",
+      "Definition": "Authorization based on user, resource, action, environment and context attributes.",
+      "UI Usage Guidance": "Keep ABAC in LTR in technical documentation.",
+      "Direction": "Mixed"
+    },
+    {
+      "ID": "TERM-121",
+      "Domain Code": "IAM",
+      "English Term": "Permission Catalogue",
+      "Preferred Arabic": "دليل الصلاحيات",
+      "Avoid / Alternate": "مكتبة الصلاحيات",
+      "Definition": "User-facing catalogue of available permission cards.",
+      "UI Usage Guidance": "Preferred employee-facing term.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-122",
+      "Domain Code": "IAM",
+      "English Term": "Permission Owner",
+      "Preferred Arabic": "مالك الصلاحية",
+      "Avoid / Alternate": "مسؤول الصلاحية",
+      "Definition": "Accountable owner who approves and governs a permission.",
+      "UI Usage Guidance": "May be system or data owner.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-123",
+      "Domain Code": "IAM",
+      "English Term": "Separation of Duties",
+      "Preferred Arabic": "فصل المهام",
+      "Avoid / Alternate": "فصل الصلاحيات",
+      "Definition": "Control preventing incompatible duties or self-approval.",
+      "UI Usage Guidance": "Use in conflict rules.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-124",
+      "Domain Code": "IAM",
+      "English Term": "Access Certification",
+      "Preferred Arabic": "مراجعة دورية للصلاحيات",
+      "Avoid / Alternate": "اعتماد الصلاحيات",
+      "Definition": "Periodic confirmation that grants remain necessary and appropriate.",
+      "UI Usage Guidance": "Preferred governance term.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-125",
+      "Domain Code": "IAM",
+      "English Term": "Temporary Permission",
+      "Preferred Arabic": "صلاحية مؤقتة",
+      "Avoid / Alternate": "وصول مؤقت",
+      "Definition": "Access with defined expiration or task condition.",
+      "UI Usage Guidance": "Must expire automatically.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-126",
+      "Domain Code": "IAM",
+      "English Term": "Conditional Access",
+      "Preferred Arabic": "وصول مشروط",
+      "Avoid / Alternate": "صلاحية مشروطة",
+      "Definition": "Access effective only under defined device, network, time, location or data conditions.",
+      "UI Usage Guidance": "Use in ABAC context.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-127",
+      "Domain Code": "IAM",
+      "English Term": "Permission Conflict",
+      "Preferred Arabic": "تعارض الصلاحيات",
+      "Avoid / Alternate": "تضارب الصلاحيات",
+      "Definition": "Incompatible combination creating fraud, security or governance risk.",
+      "UI Usage Guidance": "Show resolution path.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-128",
+      "Domain Code": "IAM",
+      "English Term": "Unauthorized Access Attempt",
+      "Preferred Arabic": "محاولة وصول غير مصرح بها",
+      "Avoid / Alternate": "محاولة دخول مرفوضة",
+      "Definition": "Attempt to access a resource without effective permission.",
+      "UI Usage Guidance": "Record in audit.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-129",
+      "Domain Code": "UX",
+      "English Term": "Operational Picture",
+      "Preferred Arabic": "المشهد التشغيلي",
+      "Avoid / Alternate": "الصورة التشغيلية",
+      "Definition": "Primary workspace showing current operational conditions and changes.",
+      "UI Usage Guidance": "Approved primary workspace label.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-130",
+      "Domain Code": "UX",
+      "English Term": "Intelligence Map",
+      "Preferred Arabic": "الخريطة الاستخباراتية",
+      "Avoid / Alternate": "خريطة المعلومات",
+      "Definition": "Map-focused workspace for layers, events, assets and analysis.",
+      "UI Usage Guidance": "Approved page label.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-131",
+      "Domain Code": "UX",
+      "English Term": "Source Health Centre",
+      "Preferred Arabic": "مركز صحة المصادر",
+      "Avoid / Alternate": "حالة المصادر",
+      "Definition": "Workspace for freshness, failures, credentials, quotas and fallbacks.",
+      "UI Usage Guidance": "Administrative/operations term.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-132",
+      "Domain Code": "UX",
+      "English Term": "Context Drawer",
+      "Preferred Arabic": "درج سياقي",
+      "Avoid / Alternate": "لوحة جانبية",
+      "Definition": "Non-blocking panel showing details for a selected event or asset.",
+      "UI Usage Guidance": "Use on desktop/tablet.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-133",
+      "Domain Code": "UX",
+      "English Term": "Bottom Sheet",
+      "Preferred Arabic": "لوحة سفلية",
+      "Avoid / Alternate": "نافذة سفلية",
+      "Definition": "Mobile panel that rises from the bottom for contextual details.",
+      "UI Usage Guidance": "Use in mobile design documentation.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-134",
+      "Domain Code": "UX",
+      "English Term": "Layer Controller",
+      "Preferred Arabic": "متحكم الطبقات",
+      "Avoid / Alternate": "قائمة الطبقات",
+      "Definition": "Searchable control for enabling and inspecting map layers.",
+      "UI Usage Guidance": "Avoid long checkbox lists.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-135",
+      "Domain Code": "UX",
+      "English Term": "Saved View",
+      "Preferred Arabic": "عرض محفوظ",
+      "Avoid / Alternate": "منظور محفوظ",
+      "Definition": "Stored map, filter and panel state for later reuse.",
+      "UI Usage Guidance": "Use with shareable state.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-136",
+      "Domain Code": "UX",
+      "English Term": "Data Cutoff",
+      "Preferred Arabic": "وقت إقفال البيانات",
+      "Avoid / Alternate": "وقت التقرير",
+      "Definition": "Latest data time included in a report or brief.",
+      "UI Usage Guidance": "Required in exports.",
+      "Direction": "RTL"
+    },
+    {
+      "ID": "TERM-137",
+      "Domain Code": "UX",
+      "English Term": "Last Complete Refresh",
+      "Preferred Arabic": "آخر تحديث مكتمل",
+      "Avoid / Alternate": "آخر تحديث",
+      "Definition": "Latest time all required refresh jobs completed successfully.",
+      "UI Usage Guidance": "Distinguish from partial refresh.",
+      "Direction": "RTL"
+    }
+  ],
+  "domains": [
+    {
+      "Code": "GEO",
+      "English Domain": "Geopolitics and Conflicts",
+      "Arabic Domain": "الجغرافيا السياسية والنزاعات"
+    },
+    {
+      "Code": "DEF",
+      "English Domain": "Security and Defence",
+      "Arabic Domain": "الأمن والدفاع"
+    },
+    {
+      "Code": "AVI",
+      "English Domain": "Aviation and Airspace",
+      "Arabic Domain": "الطيران والمجال الجوي"
+    },
+    {
+      "Code": "MAR",
+      "English Domain": "Maritime and Supply Chains",
+      "Arabic Domain": "الملاحة البحرية وسلاسل الإمداد"
+    },
+    {
+      "Code": "ENE",
+      "English Domain": "Energy and Resources",
+      "Arabic Domain": "الطاقة والموارد"
+    },
+    {
+      "Code": "ECO",
+      "English Domain": "Economy and Markets",
+      "Arabic Domain": "الاقتصاد والأسواق"
+    },
+    {
+      "Code": "INF",
+      "English Domain": "Strategic Infrastructure",
+      "Arabic Domain": "البنية التحتية الاستراتيجية"
+    },
+    {
+      "Code": "CYB",
+      "English Domain": "Cybersecurity and Communications",
+      "Arabic Domain": "الأمن السيبراني والاتصالات"
+    },
+    {
+      "Code": "CLH",
+      "English Domain": "Climate, Disasters and Health",
+      "Arabic Domain": "المناخ والكوارث والصحة"
+    },
+    {
+      "Code": "TEC",
+      "English Domain": "Technology and AI",
+      "Arabic Domain": "التقنية والذكاء الاصطناعي"
+    },
+    {
+      "Code": "SRC",
+      "English Domain": "Sources and Governance",
+      "Arabic Domain": "المصادر والحوكمة"
+    },
+    {
+      "Code": "INT",
+      "English Domain": "Intelligence Analysis",
+      "Arabic Domain": "التحليل الاستخباراتي"
+    },
+    {
+      "Code": "ALT",
+      "English Domain": "Alerts and Operations",
+      "Arabic Domain": "التنبيهات والعمليات"
+    },
+    {
+      "Code": "IAM",
+      "English Domain": "Identity and Permissions",
+      "Arabic Domain": "الهوية والصلاحيات"
+    },
+    {
+      "Code": "UX",
+      "English Domain": "User Experience and Platform",
+      "Arabic Domain": "تجربة المستخدم والمنصة"
+    }
+  ],
+  "statusLabels": [
+    {
+      "Category": "Verification",
+      "English Label": "Verified Fact",
+      "Arabic Label": "حقيقة موثقة",
+      "Definition / Use": "Meets an approved verification rule; not granted automatically to official-source content."
+    },
+    {
+      "Category": "Verification",
+      "English Label": "Source Claim",
+      "Arabic Label": "ادعاء من المصدر",
+      "Definition / Use": "Statement attributed to a source and not automatically verified."
+    },
+    {
+      "Category": "Verification",
+      "English Label": "Preliminary Indicator",
+      "Arabic Label": "مؤشر أولي",
+      "Definition / Use": "Early signal requiring additional corroboration."
+    },
+    {
+      "Category": "Verification",
+      "English Label": "Machine Inference",
+      "Arabic Label": "استنتاج آلي",
+      "Definition / Use": "Model- or rule-generated interpretation with evidence and confidence."
+    },
+    {
+      "Category": "Verification",
+      "English Label": "Analyst Assessment",
+      "Arabic Label": "تقدير تحليلي",
+      "Definition / Use": "Human judgment supported by evidence and assumptions."
+    },
+    {
+      "Category": "Verification",
+      "English Label": "Forecast",
+      "Arabic Label": "توقع",
+      "Definition / Use": "Forward-looking estimate with explicit uncertainty."
+    },
+    {
+      "Category": "Verification",
+      "English Label": "Contradictory Information",
+      "Arabic Label": "معلومات متعارضة",
+      "Definition / Use": "Relevant sources materially disagree."
+    },
+    {
+      "Category": "Verification",
+      "English Label": "Unavailable Data",
+      "Arabic Label": "بيانات غير متاحة",
+      "Definition / Use": "The platform cannot currently observe the required information."
+    },
+    {
+      "Category": "Verification",
+      "English Label": "Non-live Demonstration Data",
+      "Arabic Label": "بيانات تجريبية غير حية",
+      "Definition / Use": "Simulated or test data that must never appear as live intelligence."
+    },
+    {
+      "Category": "Source Health",
+      "English Label": "Fresh",
+      "Arabic Label": "محدث",
+      "Definition / Use": "Within the approved freshness SLA."
+    },
+    {
+      "Category": "Source Health",
+      "English Label": "Partially Fresh",
+      "Arabic Label": "محدث جزئياً",
+      "Definition / Use": "Some feeds, regions or fields are current while others are delayed."
+    },
+    {
+      "Category": "Source Health",
+      "English Label": "Delayed",
+      "Arabic Label": "متأخر",
+      "Definition / Use": "Beyond the expected refresh interval but within the grace threshold."
+    },
+    {
+      "Category": "Source Health",
+      "English Label": "Failed",
+      "Arabic Label": "متعثر",
+      "Definition / Use": "Recent collection failed or repeated failures exceed threshold."
+    },
+    {
+      "Category": "Source Health",
+      "English Label": "Unavailable",
+      "Arabic Label": "غير متاح",
+      "Definition / Use": "Provider, endpoint, licence or dependency is unavailable."
+    },
+    {
+      "Category": "Source Health",
+      "English Label": "Credential Required",
+      "Arabic Label": "يتطلب مفتاح وصول",
+      "Definition / Use": "Implementation exists but approved authentication is absent."
+    },
+    {
+      "Category": "Source Health",
+      "English Label": "Experimental",
+      "Arabic Label": "تجريبي",
+      "Definition / Use": "Not approved for normal operational reliance."
+    },
+    {
+      "Category": "Source Health",
+      "English Label": "Fallback Source",
+      "Arabic Label": "مصدر احتياطي",
+      "Definition / Use": "Data is currently supplied by a fallback provider."
+    },
+    {
+      "Category": "Alert Severity",
+      "English Label": "Critical",
+      "Arabic Label": "حرج",
+      "Definition / Use": "Immediate or potentially severe operational impact."
+    },
+    {
+      "Category": "Alert Severity",
+      "English Label": "High",
+      "Arabic Label": "مرتفع",
+      "Definition / Use": "Significant impact requiring prompt analyst attention."
+    },
+    {
+      "Category": "Alert Severity",
+      "English Label": "Medium",
+      "Arabic Label": "متوسط",
+      "Definition / Use": "Relevant change requiring monitoring."
+    },
+    {
+      "Category": "Alert Severity",
+      "English Label": "Low",
+      "Arabic Label": "منخفض",
+      "Definition / Use": "Limited impact or low-confidence development."
+    },
+    {
+      "Category": "Alert Severity",
+      "English Label": "Informational",
+      "Arabic Label": "معلوماتي",
+      "Definition / Use": "Context, system status or low-impact information."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Requested",
+      "Arabic Label": "مطلوبة",
+      "Definition / Use": "Submitted by the employee."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Under Manager Review",
+      "Arabic Label": "تحت مراجعة المسؤول",
+      "Definition / Use": "Awaiting line-manager decision."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Under Owner Review",
+      "Arabic Label": "تحت مراجعة مالك النظام",
+      "Definition / Use": "Awaiting permission or system owner."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "More Information Required",
+      "Arabic Label": "تحتاج إلى معلومات إضافية",
+      "Definition / Use": "Returned to requester for clarification."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Approved",
+      "Arabic Label": "معتمدة",
+      "Definition / Use": "Required approvals completed."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Scheduled for Activation",
+      "Arabic Label": "مجدولة للتفعيل",
+      "Definition / Use": "Approved with a future start date."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Active",
+      "Arabic Label": "فعالة",
+      "Definition / Use": "Effective under current conditions."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Suspended",
+      "Arabic Label": "معلقة",
+      "Definition / Use": "Temporarily inactive."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Expiring Soon",
+      "Arabic Label": "قاربت على الانتهاء",
+      "Definition / Use": "Within configured expiry-notification threshold."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Expired",
+      "Arabic Label": "منتهية",
+      "Definition / Use": "End date or task condition reached."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Rejected",
+      "Arabic Label": "مرفوضة",
+      "Definition / Use": "Not approved; reason recorded."
+    },
+    {
+      "Category": "Permission State",
+      "English Label": "Revoked",
+      "Arabic Label": "ملغاة",
+      "Definition / Use": "Cancelled before natural expiration."
+    },
+    {
+      "Category": "Data Nature",
+      "English Label": "Live",
+      "Arabic Label": "حية",
+      "Definition / Use": "Current operational data under the provider’s definition."
+    },
+    {
+      "Category": "Data Nature",
+      "English Label": "Delayed",
+      "Arabic Label": "متأخرة",
+      "Definition / Use": "Operational data with a known delay."
+    },
+    {
+      "Category": "Data Nature",
+      "English Label": "Historical",
+      "Arabic Label": "تاريخية",
+      "Definition / Use": "Past-period data."
+    },
+    {
+      "Category": "Data Nature",
+      "English Label": "Estimated",
+      "Arabic Label": "تقديرية",
+      "Definition / Use": "Derived or estimated rather than directly observed."
+    },
+    {
+      "Category": "Data Nature",
+      "English Label": "Simulated",
+      "Arabic Label": "محاكاة",
+      "Definition / Use": "Test or demonstration data."
+    },
+    {
+      "Category": "Data Nature",
+      "English Label": "Unavailable",
+      "Arabic Label": "غير متاحة",
+      "Definition / Use": "No usable data is currently available."
+    }
+  ],
+  "uiLabels": [
+    {
+      "Group": "Primary Navigation",
+      "English Label": "Home",
+      "Preferred Arabic": "الرئيسية",
+      "Notes": "Use only for the general landing/home surface."
+    },
+    {
+      "Group": "Primary Navigation",
+      "English Label": "Operational Picture",
+      "Preferred Arabic": "المشهد التشغيلي",
+      "Notes": "Primary operational workspace."
+    },
+    {
+      "Group": "Primary Navigation",
+      "English Label": "Intelligence Map",
+      "Preferred Arabic": "الخريطة الاستخباراتية",
+      "Notes": "Map-first intelligence workspace."
+    },
+    {
+      "Group": "Primary Navigation",
+      "English Label": "News and Open Sources",
+      "Preferred Arabic": "الأخبار والمصادر المفتوحة",
+      "Notes": "Evidence and media workspace."
+    },
+    {
+      "Group": "Primary Navigation",
+      "English Label": "Analysis and Indicators",
+      "Preferred Arabic": "التحليل والمؤشرات",
+      "Notes": "Analytical products and indicators."
+    },
+    {
+      "Group": "Primary Navigation",
+      "English Label": "Alerts",
+      "Preferred Arabic": "التنبيهات",
+      "Notes": "Operational alert centre."
+    },
+    {
+      "Group": "Primary Navigation",
+      "English Label": "Briefs and Reports",
+      "Preferred Arabic": "الموجزات والتقارير",
+      "Notes": "Approved intelligence products and exports."
+    },
+    {
+      "Group": "Primary Navigation",
+      "English Label": "Sources and Data Quality",
+      "Preferred Arabic": "المصادر وجودة البيانات",
+      "Notes": "Source governance and health."
+    },
+    {
+      "Group": "Primary Navigation",
+      "English Label": "Settings",
+      "Preferred Arabic": "الإعدادات",
+      "Notes": "User and platform settings."
+    },
+    {
+      "Group": "Permission Interface",
+      "English Label": "Explore Permissions",
+      "Preferred Arabic": "استكشف الصلاحيات",
+      "Notes": "Employee permission catalogue."
+    },
+    {
+      "Group": "Permission Interface",
+      "English Label": "My Requests",
+      "Preferred Arabic": "طلباتي",
+      "Notes": "Request status and approval path."
+    },
+    {
+      "Group": "Permission Interface",
+      "English Label": "My Active Permissions",
+      "Preferred Arabic": "صلاحياتي الحالية",
+      "Notes": "Current grants, scope and duration."
+    },
+    {
+      "Group": "Permission Interface",
+      "English Label": "Expiring Soon",
+      "Preferred Arabic": "الصلاحيات التي ستنتهي قريباً",
+      "Notes": "Renewal workflow."
+    },
+    {
+      "Group": "Manager Interface",
+      "English Label": "Team Permission Management",
+      "Preferred Arabic": "إدارة صلاحيات الفريق",
+      "Notes": "Unified manager workspace."
+    },
+    {
+      "Group": "Manager Interface",
+      "English Label": "Pending Approvals",
+      "Preferred Arabic": "طلبات بانتظار الاعتماد",
+      "Notes": "Manager queue."
+    },
+    {
+      "Group": "Manager Interface",
+      "English Label": "Team Matrix",
+      "Preferred Arabic": "مصفوفة الفريق",
+      "Notes": "Employees in rows and permission groups in columns."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "View",
+      "Preferred Arabic": "مشاهدة",
+      "Notes": "Read-only access."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "Search",
+      "Preferred Arabic": "بحث",
+      "Notes": "Search within authorized scope."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "Download",
+      "Preferred Arabic": "تنزيل",
+      "Notes": "Export/download subject to access and licence."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "Add",
+      "Preferred Arabic": "إضافة",
+      "Notes": "Create a record or item."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "Edit",
+      "Preferred Arabic": "تعديل",
+      "Notes": "Modify an existing item."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "Analyse",
+      "Preferred Arabic": "تحليل",
+      "Notes": "Use analytical tools and add analysis."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "Review",
+      "Preferred Arabic": "مراجعة",
+      "Notes": "Quality or governance review."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "Approve",
+      "Preferred Arabic": "اعتماد",
+      "Notes": "Formal approval action."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "Publish",
+      "Preferred Arabic": "نشر",
+      "Notes": "Release to an approved audience."
+    },
+    {
+      "Group": "Actions",
+      "English Label": "Administer",
+      "Preferred Arabic": "إدارة",
+      "Notes": "Administrative control."
+    },
+    {
+      "Group": "Alert Actions",
+      "English Label": "Acknowledge",
+      "Preferred Arabic": "إقرار بالاطلاع",
+      "Notes": "Not equivalent to approval."
+    },
+    {
+      "Group": "Alert Actions",
+      "English Label": "Save",
+      "Preferred Arabic": "حفظ",
+      "Notes": "Save to user or team collection."
+    },
+    {
+      "Group": "Alert Actions",
+      "English Label": "Assign",
+      "Preferred Arabic": "إسناد",
+      "Notes": "Assign to a user or team."
+    },
+    {
+      "Group": "Alert Actions",
+      "English Label": "Share",
+      "Preferred Arabic": "مشاركة",
+      "Notes": "Subject to access classification."
+    },
+    {
+      "Group": "Alert Actions",
+      "English Label": "Archive",
+      "Preferred Arabic": "أرشفة",
+      "Notes": "Retain history; do not delete."
+    },
+    {
+      "Group": "Context Drawer",
+      "English Label": "Summary",
+      "Preferred Arabic": "الملخص",
+      "Notes": "What happened, where, when and why it matters."
+    },
+    {
+      "Group": "Context Drawer",
+      "English Label": "Active Signals",
+      "Preferred Arabic": "الإشارات النشطة",
+      "Notes": "Current related signals."
+    },
+    {
+      "Group": "Context Drawer",
+      "English Label": "Timeline",
+      "Preferred Arabic": "الخط الزمني",
+      "Notes": "Chronological evidence and changes."
+    },
+    {
+      "Group": "Context Drawer",
+      "English Label": "Infrastructure",
+      "Preferred Arabic": "البنية التحتية",
+      "Notes": "Affected and related assets."
+    },
+    {
+      "Group": "Context Drawer",
+      "English Label": "News",
+      "Preferred Arabic": "الأخبار",
+      "Notes": "Relevant articles and reports."
+    },
+    {
+      "Group": "Context Drawer",
+      "English Label": "Sources",
+      "Preferred Arabic": "المصادر",
+      "Notes": "Provenance, health and limitations."
+    },
+    {
+      "Group": "Context Drawer",
+      "English Label": "Analysis",
+      "Preferred Arabic": "التحليل",
+      "Notes": "Machine and analyst assessments."
+    },
+    {
+      "Group": "Context Drawer",
+      "English Label": "Related Items",
+      "Preferred Arabic": "العناصر المرتبطة",
+      "Notes": "Events, entities and assets."
+    }
+  ],
+  "guidance": [
+    {
+      "Rule": "Working Language",
+      "Guidance": "Custom GPT responses and engineering documentation are in English unless Arabic UI content is specifically requested."
+    },
+    {
+      "Rule": "Target Product Language",
+      "Guidance": "SAMT is Arabic-first and RTL by default."
+    },
+    {
+      "Rule": "Original Evidence",
+      "Guidance": "Preserve original source names, article titles, URLs, identifiers and technical codes when required for evidence."
+    },
+    {
+      "Rule": "Bidirectional Text",
+      "Guidance": "Use bdi, dir=\"ltr\", Unicode isolation or an equivalent method for LTR identifiers embedded in Arabic."
+    },
+    {
+      "Rule": "No Literal Translation",
+      "Guidance": "Prefer approved institutional and intelligence terminology over literal machine translation."
+    },
+    {
+      "Rule": "Consistency",
+      "Guidance": "Use one preferred Arabic term across navigation, tooltips, reports and alerts unless a documented domain distinction exists."
+    },
+    {
+      "Rule": "Claims vs Facts",
+      "Guidance": "Do not translate an official claim in a way that implies verification."
+    },
+    {
+      "Rule": "Missing Data",
+      "Guidance": "Use explicit unavailable or degraded states; never translate absence into zero."
+    },
+    {
+      "Rule": "Simulation",
+      "Guidance": "Use the exact Arabic label بيانات تجريبية غير حية for simulated operational data."
+    },
+    {
+      "Rule": "Dates and Time",
+      "Guidance": "Use Arabic formatting with Asia/Dubai as the default operational timezone and provide UTC where needed."
+    },
+    {
+      "Rule": "Numbers and Codes",
+      "Guidance": "Do not translate or reverse aircraft registrations, vessel identifiers, airport codes, stock tickers, coordinates or source IDs."
+    },
+    {
+      "Rule": "Review",
+      "Guidance": "High-impact military, legal, health and financial terminology requires specialist review before production release."
+    }
+  ]
+}
