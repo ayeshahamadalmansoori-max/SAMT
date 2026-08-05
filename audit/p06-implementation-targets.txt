@@ -1,0 +1,249 @@
+P06 RTL FOUNDATION IMPLEMENTATION TARGETS
+Generated: 2026-08-05T09:52:27.2123595+04:00
+Repository: C:\Projects\worldmonitor
+Branch: samt/transformation
+Commit: 5e46e85d52fdb56b0d469cb47caaa84245eb3f2a
+
+=== COUNTS ===
+Production entry points: 4
+Likely global style files: 4
+Direction-risk files: 11
+Relevant RTL/Arabic tests: 107
+Relevant package scripts: 76
+
+=== PRODUCTION ENTRY POINTS ===
+
+filePath              candidateType               hasArabicLang hasRtlDirection hasLtrIsolation importsCss hasLocaleState
+--------              -------------               ------------- --------------- --------------- ---------- --------------
+src/main.ts           Application entry candidate false         false           false           true       true          
+src/App.ts            Application shell candidate false         false           false           false      true          
+index.html            HTML root candidate         false         false           false           false      true          
+public/pro/index.html HTML root candidate         false         false           false           false      true
+
+=== LIKELY GLOBAL STYLE FILES ===
+
+filePath                             hasRtlDirection hasLtrIsolation importsCss
+--------                             --------------- --------------- ----------
+public/pro/assets/index-eYnecI2g.css false           false           false     
+src/styles/base-layer.css            false           false           false     
+src/styles/happy-theme.css           false           false           false     
+src/styles/main.css                  true            true            false
+
+=== DIRECTION-RISK FILES ===
+
+filePath                             physicalDirectionCount logicalPropertyCount priority
+--------                             ---------------------- -------------------- --------
+src/styles/main.css                  395                    3                    High    
+src/styles/panels.css                91                     2                    High    
+src/styles/rtl-overrides.css         47                     0                    High    
+src/styles/country-deep-dive.css     29                     0                    High    
+public/pro/assets/index-eYnecI2g.css 19                     59                   Medium  
+src/styles/settings-window.css       18                     0                    Medium  
+src/styles/route-explorer.css        9                      0                    Medium  
+src/styles/happy-theme.css           7                      0                    Medium  
+src/styles/embed.css                 3                      0                    Medium  
+src/styles/header.css                2                      0                    Medium  
+src/styles/supply-chain-panel.css    1                      0                    Medium
+
+=== EXISTING RTL / ARABIC TEST EVIDENCE ===
+
+filePath                                                                   hasRtlTestEvidence hasArabicTestEvidence hasBidirectionalT
+                                                                                                                    estEvidence      
+--------                                                                   ------------------ --------------------- -----------------
+convex/__tests__/billing.test.ts                                           false              false                 true             
+convex/__tests__/webhook-rollback-boundaries.test.ts                       false              false                 true             
+e2e/dashboard-news-request-budget.spec.ts                                  false              false                 true             
+e2e/map-harness.spec.ts-snapshots/layer-finance-ais-z5.png                 false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-bases-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-central-banks-z5.png       false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-commodity-hubs-z5.png      false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-conflicts-z4.png           false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-cyber-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-datacenters-cluster-z3.png false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-datacenters-icons-z6.png   false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-economic-z5.png            false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-financial-centers-z5.png   false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-fires-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-hotspots-z4.png            false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-irradiators-z5.png         false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-military-z5.png            false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-natural-z5.png             false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-news-z5.png                false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-nuclear-z5.png             false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-outages-z5.png             false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-ports-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-protests-z5.png            false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-stock-exchanges-z5.png     false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-waterways-z5.png           false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-finance-weather-z5.png             false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-ais-z5.png                    false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-bases-z5.png                  false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-conflicts-z4.png              false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-cyber-z5.png                  false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-datacenters-cluster-z3.png    false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-datacenters-icons-z6.png      false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-economic-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-fires-z5.png                  false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-hotspots-z4.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-irradiators-z5.png            false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-military-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-natural-z5.png                false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-news-z5.png                   false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-nuclear-z5.png                false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-outages-z5.png                false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-ports-z5.png                  false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-protests-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-waterways-z5.png              false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-full-weather-z5.png                false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-accelerators-z5.png           false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-ais-z5.png                    false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-bases-z5.png                  false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-cloud-regions-z5.png          false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-conflicts-z4.png              false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-cyber-z5.png                  false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-datacenters-cluster-z3.png    false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-datacenters-icons-z6.png      false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-economic-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-fires-z5.png                  false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-hotspots-z4.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-irradiators-z5.png            false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-military-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-natural-z5.png                false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-news-z5.png                   false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-nuclear-z5.png                false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-outages-z5.png                false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-ports-z5.png                  false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-protests-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-startup-hubs-z5.png           false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-tech-events-z5.png            false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-tech-hqs-z5.png               false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-waterways-z5.png              false              true                  false            
+e2e/map-harness.spec.ts-snapshots/layer-tech-weather-z5.png                false              true                  false            
+scripts/ais-relay-rss.test.cjs                                             false              false                 true             
+server/__tests__/gateway-user-key-apiaccess.test.ts                        false              false                 true             
+src/e2e/map-harness.ts                                                     false              false                 true             
+tests/api-key-rate-limit.test.mts                                          false              false                 true             
+tests/brief-filter.test.mjs                                                false              false                 true             
+tests/brief-llm.test.mjs                                                   false              false                 true             
+tests/brief-magazine-render.test.mjs                                       false              false                 true             
+tests/china-corridor-handler.test.mts                                      false              false                 true             
+tests/deckgl-layer-state-aliasing.test.mjs                                 false              false                 true             
+tests/deploy-config.test.mjs                                               false              false                 true             
+tests/dom/entitlement-watch-fanout.test.mts                                false              false                 true             
+tests/dom/export-pdf-cycle.test.mts                                        false              false                 true             
+tests/edge-functions.test.mjs                                              false              false                 true             
+tests/entitlement-listener-fanout.test.mts                                 false              false                 true             
+tests/frontend-cii-source-of-truth.test.mts                                true               false                 false            
+tests/hapi-gdelt-circuit-breakers.test.mjs                                 false              false                 true             
+tests/helpers/resilience-fixtures.mts                                      false              false                 true             
+tests/i18n-hreflang-contract.test.mts                                      true               false                 false            
+tests/importance-score-parity.test.mjs                                     false              false                 true             
+tests/map-locale.test.mts                                                  true               false                 false            
+tests/map-trade-trip-position.test.mjs                                     false              false                 true             
+tests/market-quote-cache-keying.test.mjs                                   false              false                 true             
+tests/mcp-tool-annotations.test.mjs                                        false              false                 true             
+tests/product-catalog-freshness.test.mjs                                   false              true                  false            
+tests/relay-auth.test.mjs                                                  false              false                 true             
+tests/resilience-cohort-bias-anchors.test.mts                              false              false                 true             
+tests/resilience-financial-system-exposure.test.mts                        false              false                 true             
+tests/resilience-ranking.test.mts                                          false              false                 true             
+tests/secondary-startup.test.mts                                           true               false                 false            
+tests/seed-env-hermeticity.test.mjs                                        false              false                 true             
+tests/seed-recovery-reexport-share-comtrade.test.mts                       false              false                 true             
+tests/seed-research-arxiv-isolation.test.mjs                               false              false                 true             
+tests/seed-supply-chain-trade-wto-resilience.test.mjs                      false              false                 true             
+tests/shipping-v2-handler.test.mjs                                         false              false                 true             
+tests/tech-events-cold-start-widest.test.mts                               false              false                 true             
+tests/tech-readiness-circuit-breakers.test.mjs                             false              false                 true             
+tests/unicode-safety-scope.test.mjs                                        true               false                 false            
+tests/widget-builder.test.mjs                                              false              false                 true
+
+=== RELEVANT PACKAGE SCRIPTS ===
+
+Name                             Value                                                                                               
+----                             -----                                                                                               
+build                            npm run security:vite-env-secrets -- --strict-local && npm run build:blog && npm run build:crawla...
+build:agent-skills               node scripts/build-agent-skills-index.mjs                                                           
+build:blog                       cd blog-site && npm run build && rm -rf ../public/blog && mkdir -p ../public/blog && cp -r dist/*...
+build:commodity                  npm run security:vite-env-secrets -- --strict-local && npm run build:openapi && npm run build:age...
+build:crawlable-corpus           node --import tsx scripts/build-crawlable-corpus.mjs                                                
+build:desktop                    npm run security:vite-env-secrets -- --strict-local && node scripts/build-sidecar-sebuf.mjs && no...
+build:energy                     npm run security:vite-env-secrets -- --strict-local && npm run build:openapi && npm run build:age...
+build:finance                    npm run security:vite-env-secrets -- --strict-local && npm run build:openapi && npm run build:age...
+build:full                       npm run security:vite-env-secrets -- --strict-local && npm run build:openapi && npm run build:age...
+build:happy                      npm run security:vite-env-secrets -- --strict-local && npm run build:openapi && npm run build:age...
+build:openapi                    node -e "require('fs').cpSync('docs/api/worldmonitor.openapi.yaml', 'public/openapi.yaml')" && no...
+build:pro                        cd pro-test && npm ci && npm run build                                                              
+build:sidecar-sebuf              node scripts/build-sidecar-sebuf.mjs                                                                
+build:sitemap                    node scripts/build-sitemap.mjs                                                                      
+build:sitemap:check              npm run build:crawlable-corpus && node scripts/build-sitemap.mjs --check                            
+build:tech                       npm run security:vite-env-secrets -- --strict-local && npm run build:openapi && npm run build:age...
+desktop:build:finance            npm run security:vite-env-secrets -- --strict-local && npm run desktop:check-env && npm run versi...
+desktop:build:full               npm run security:vite-env-secrets -- --strict-local && npm run desktop:check-env && npm run versi...
+desktop:build:tech               npm run security:vite-env-secrets -- --strict-local && npm run desktop:check-env && npm run versi...
+lint                             biome lint ./src ./server ./api ./tests ./e2e ./scripts ./middleware.ts && npm run lint:safe-html   
+lint:api-contract                node scripts/enforce-sebuf-api-contract.mjs                                                         
+lint:boundaries                  node scripts/lint-boundaries.mjs                                                                    
+lint:fix                         biome check ./src ./server ./api ./tests ./e2e ./scripts ./middleware.ts --fix                      
+lint:md                          markdownlint-cli2 '**/*.md' '!**/node_modules/**' '!.agent/**' '!.agents/**' '!.claude/**' '!.fac...
+lint:mintlify-slugs              node scripts/enforce-mintlify-reserved-slugs.mjs                                                    
+lint:premium-fetch               tsx scripts/enforce-premium-fetch.mjs                                                               
+lint:public-docs                 node scripts/check-public-doc-plan-references.mjs                                                   
+lint:rate-limit-policies         tsx scripts/enforce-rate-limit-policies.mjs                                                         
+lint:safe-html                   node scripts/enforce-safe-html.mjs                                                                  
+lint:unicode                     node scripts/check-unicode-safety.mjs                                                               
+lint:unicode:staged              node scripts/check-unicode-safety.mjs --staged                                                      
+prebuild                         npm run product:facts && npm run build:openapi && npm run build:agent-skills                        
+prebuild:blog                    npm run product:facts                                                                               
+prebuild:commodity               npm run product:facts                                                                               
+prebuild:energy                  npm run product:facts                                                                               
+prebuild:finance                 npm run product:facts                                                                               
+prebuild:full                    npm run product:facts                                                                               
+prebuild:happy                   npm run product:facts                                                                               
+prebuild:pro                     npm run product:facts                                                                               
+prebuild:tech                    npm run product:facts                                                                               
+test:convex                      vitest run --config vitest.config.mts                                                               
+test:convex:watch                vitest --config vitest.config.mts                                                                   
+test:data                        tsx --test --test-concurrency=16 tests/*.test.mjs tests/*.test.mts cli/test/*.test.mjs api/securi...
+test:dom                         vitest run --config vitest.dom.config.mts                                                           
+test:e2e                         npm run test:e2e:runtime && npm run test:e2e:full && npm run test:e2e:tech && npm run test:e2e:fi...
+test:e2e:commodity               cross-env VITE_VARIANT=commodity playwright test                                                    
+test:e2e:energy                  cross-env VITE_VARIANT=energy playwright test                                                       
+test:e2e:finance                 cross-env VITE_VARIANT=finance playwright test                                                      
+test:e2e:full                    cross-env VITE_VARIANT=full playwright test                                                         
+test:e2e:happy                   cross-env VITE_VARIANT=happy playwright test                                                        
+test:e2e:mcp-grant               cross-env VITE_VARIANT=full playwright test e2e/mcp-grant-consent.spec.ts                           
+test:e2e:news-budget             cross-env VITE_VARIANT=full playwright test e2e/dashboard-news-request-budget.spec.ts               
+test:e2e:runtime                 cross-env VITE_VARIANT=full playwright test e2e/runtime-fetch.spec.ts                               
+test:e2e:tech                    cross-env VITE_VARIANT=tech playwright test                                                         
+test:e2e:variant-smoke           npm run test:e2e:variant-smoke:full && npm run test:e2e:variant-smoke:tech && npm run test:e2e:va...
+test:e2e:variant-smoke:commodity cross-env VITE_VARIANT=commodity playwright test e2e/variant-live-smoke.spec.ts                     
+test:e2e:variant-smoke:energy    cross-env VITE_VARIANT=energy playwright test e2e/variant-live-smoke.spec.ts                        
+test:e2e:variant-smoke:finance   cross-env VITE_VARIANT=finance playwright test e2e/variant-live-smoke.spec.ts                       
+test:e2e:variant-smoke:full      cross-env VITE_VARIANT=full playwright test e2e/variant-live-smoke.spec.ts                          
+test:e2e:variant-smoke:happy     cross-env VITE_VARIANT=happy playwright test e2e/variant-live-smoke.spec.ts                         
+test:e2e:variant-smoke:tech      cross-env VITE_VARIANT=tech playwright test e2e/variant-live-smoke.spec.ts                          
+test:e2e:visual                  npm run test:e2e:visual:full && npm run test:e2e:visual:tech                                        
+test:e2e:visual:full             cross-env VITE_VARIANT=full playwright test -g "matches golden screenshots per layer and zoom"      
+test:e2e:visual:tech             cross-env VITE_VARIANT=tech playwright test -g "matches golden screenshots per layer and zoom"      
+test:e2e:visual:update           npm run test:e2e:visual:update:full && npm run test:e2e:visual:update:tech                          
+test:e2e:visual:update:full      cross-env VITE_VARIANT=full playwright test -g "matches golden screenshots per layer and zoom" --...
+test:e2e:visual:update:tech      cross-env VITE_VARIANT=tech playwright test -g "matches golden screenshots per layer and zoom" --...
+test:feeds                       node scripts/validate-rss-feeds.mjs                                                                 
+test:feeds:ci                    node scripts/validate-rss-feeds.mjs --ci                                                            
+test:resilience-validation-smoke tsx --test tests/resilience-validation-artifacts-schema.test.mts tests/benchmark-resilience-exter...
+test:sidecar                     node --test src-tauri/sidecar/local-api-server.test.mjs src-tauri/open-url-safety.test.mjs api/_c...
+typecheck                        tsc --noEmit                                                                                        
+typecheck:all                    tsc --noEmit && tsc --noEmit -p tsconfig.api.json && node scripts/audit-convex-string-calls.cjs     
+typecheck:api                    tsc --noEmit -p tsconfig.api.json && node scripts/audit-convex-string-calls.cjs                     
+typecheck:dom-tests              tsc --noEmit -p tsconfig.dom-tests.json                                                             
+worktree:bootstrap:test-only     node scripts/bootstrap-worktree.mjs --ignore-scripts
+
+=== IMPLEMENTATION CONSTRAINTS ===
+- Do not redesign or replace the existing operational map shell.
+- Set Arabic language and RTL direction only at the confirmed production root.
+- Add reusable LTR isolation for technical identifiers.
+- Migrate physical CSS only where semantic mirroring is correct.
+- Preserve map, chart, coordinate, and directional behaviors that are intentionally physical.
+- Add bounded automated RTL and bidirectional tests.
+- Keep the preflight artifacts with the final P06 implementation commit.

@@ -122,3 +122,27 @@
   margin-right: auto;
   margin-left: 12px;
 }
+
+/* SAMT P06 BIDIRECTIONAL ISOLATION */
+/*
+ * Apply to non-translatable technical identifiers inside RTL content.
+ * Directional icons and map controls are intentionally not mirrored globally.
+ */
+.wm-bidi-ltr,
+[data-bidi='ltr'] {
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: start;
+}
+
+.wm-bidi-auto,
+[data-bidi='auto'] {
+  direction: auto;
+  unicode-bidi: plaintext;
+  text-align: start;
+}
+
+/* Opt-in mirroring only for controls whose meaning truly reverses in RTL. */
+[dir='rtl'] .wm-mirror-in-rtl {
+  transform: scaleX(-1);
+}

@@ -3,7 +3,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import { enqueueSentryCall } from '@/bootstrap/sentry-defer';
 import { readQueryLanguage, stripQueryLanguage } from '@/utils/i18n-url';
-
+import { applySamtDocumentDirection } from '@/utils/samt-rtl';
 // Keep only first-paint English strings in the entry chunk. The full English
 // dictionary is loaded through localeModules so it can split like other locales.
 import enShellTranslation from '../locales/en.shell.json';
@@ -49,15 +49,8 @@ function normalizeLanguage(lng: string): SupportedLanguage {
 }
 
 function applyDocumentDirection(lang: string): void {
-  const base = lang.split('-')[0] || lang;
-  document.documentElement.setAttribute('lang', base === 'zh' ? 'zh-CN' : base);
-  if (RTL_LANGUAGES.has(base)) {
-    document.documentElement.setAttribute('dir', 'rtl');
-  } else {
-    document.documentElement.removeAttribute('dir');
-  }
+  applySamtDocumentDirection(lang);
 }
-
 async function ensureLanguageLoaded(lng: string): Promise<SupportedLanguage> {
   const normalized = normalizeLanguage(lng);
   if (loadedLanguages.has(normalized) && i18next.hasResourceBundle(normalized, 'translation')) {
@@ -181,6 +174,11 @@ export async function initI18n(): Promise<void> {
     cacheUserLanguage: () => { /* writes go through explicit changeLanguage() */ },
   });
 
+  detector.addDetector({
+    name: 'wmDefault',
+    lookup: () => 'ar',
+    cacheUserLanguage: () => { /* Arabic-first fallback is not an explicit user choice */ },
+  });
   await i18next
     .use(detector)
     .init({
@@ -195,7 +193,7 @@ export async function initI18n(): Promise<void> {
         escapeValue: false, // not needed for these simple strings
       },
       detection: {
-        order: ['wmQuery', 'wmExplicit', 'navigator'],
+        order: ['wmQuery', 'wmExplicit', 'wmDefault'],
         caches: [], // never auto-write — only changeLanguage() persists
       },
     });
@@ -257,7 +255,7 @@ export function isRTL(): boolean {
 
 export function getLocale(): string {
   const lang = getCurrentLanguage();
-  const map: Record<string, string> = { en: 'en-US', bg: 'bg-BG', cs: 'cs-CZ', el: 'el-GR', fa: 'fa-IR', zh: 'zh-CN', pt: 'pt-BR', ja: 'ja-JP', ko: 'ko-KR', ro: 'ro-RO', tr: 'tr-TR', th: 'th-TH', vi: 'vi-VN', hi: 'hi-IN' };
+  const map: Record<string, string> = { ar: 'ar-AE', en: 'en-US', bg: 'bg-BG', cs: 'cs-CZ', el: 'el-GR', fa: 'fa-IR', zh: 'zh-CN', pt: 'pt-BR', ja: 'ja-JP', ko: 'ko-KR', ro: 'ro-RO', tr: 'tr-TR', th: 'th-TH', vi: 'vi-VN', hi: 'hi-IN' };
   return map[lang] || lang;
 }
 
